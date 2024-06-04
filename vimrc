@@ -6,6 +6,7 @@ function! SynStack()
 endfunc
 nnoremap gs :call SynStack()<CR>
 
+let g:netrw_dirhistmax=0
 set laststatus=1
 set mouse=
 set clipboard=
