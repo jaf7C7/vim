@@ -63,3 +63,5 @@ autocmd FileType sh call ShSyntaxOverrides()
 hi link shSnglCase None
 hi link shCaseBar None
 hi link shTestOpr None
+hi link shQuote String
+hi link vimPatSep vimSynRegPat
