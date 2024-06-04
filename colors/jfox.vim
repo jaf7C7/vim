@@ -13,10 +13,14 @@ endif
 
 let colors_name = "jfox"
 
+set t_Co=8
+
 " UI Colors
 hi clear NonText
 hi ErrorMsg ctermfg=1 ctermbg=none
-hi MatchParen ctermbg=4
+hi Search ctermfg=0 ctermbg=7
+hi IncSearch ctermfg=3 ctermbg=0 cterm=bold,reverse
+hi MatchParen ctermfg=0 ctermbg=6
 hi clear Directory
 hi Title ctermfg=none cterm=bold
 
@@ -42,3 +46,4 @@ hi link pythonBuiltin Keyword
 hi link javaScriptBraces None
 hi link javaScriptEmbed String
 hi link javaScriptType Keyword
+hi htmlLink ctermfg=6
