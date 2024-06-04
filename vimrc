@@ -9,4 +9,5 @@ nnoremap gs :call SynStack()<CR>
 set laststatus=1
 set mouse=
 set clipboard=
+set viminfo=
 colorscheme jfox
