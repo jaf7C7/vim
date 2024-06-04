@@ -6,9 +6,9 @@ set bg&
 " Remove all existing highlighting and set the defaults.
 hi clear
 
-" TODO: Load the syntax highlighting defaults, if it's enabled.
+" Load the syntax highlighting defaults, if it's enabled.
 if exists("syntax_on")
-  syntax reset
+    syntax reset
 endif
 
 let colors_name = "jfox"
@@ -23,6 +23,8 @@ hi IncSearch ctermfg=3 ctermbg=0 cterm=bold,reverse
 hi MatchParen ctermfg=0 ctermbg=6
 hi clear Directory
 hi Title ctermfg=none cterm=bold
+hi PMenu ctermfg=none ctermbg=none cterm=reverse
+hi PMenuSel ctermfg=none ctermbg=none cterm=bold,reverse
 
 " Syntax Highlighting
 hi Statement ctermfg=4 cterm=bold
@@ -40,10 +42,24 @@ hi Todo ctermfg=6 ctermbg=none cterm=bold,reverse
 hi clear Operator
 hi clear Constant
 
-" Language Specific
+" Python
 hi link pythonInclude Statement
 hi link pythonBuiltin Keyword
+
+" Javascript
 hi link javaScriptBraces None
 hi link javaScriptEmbed String
 hi link javaScriptType Keyword
+
+" HTML/Markdown
 hi htmlLink ctermfg=6
+
+" Shell
+function ShSyntaxOverrides()
+    syntax match shFunction /^\s*\zs\w\+\ze\s*()/
+    syntax match shStatement /while\|printf/
+endfunction
+autocmd FileType sh call ShSyntaxOverrides()
+hi link shSnglCase None
+hi link shCaseBar None
+hi link shTestOpr None
