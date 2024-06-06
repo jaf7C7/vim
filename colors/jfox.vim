@@ -25,12 +25,13 @@ hi clear Directory
 hi Title ctermfg=none cterm=bold
 hi PMenu ctermfg=none ctermbg=none cterm=reverse
 hi PMenuSel ctermfg=none ctermbg=none cterm=bold,reverse
+hi ColorColumn ctermfg=none ctermbg=none cterm=reverse
 
 " Syntax Highlighting
-hi Statement ctermfg=4 cterm=bold
+hi clear Statement
 hi clear Type
 hi clear Identifier
-hi String ctermfg=2
+hi clear String
 hi clear Number
 hi clear PreProc
 hi clear Delimiter
@@ -47,6 +48,11 @@ hi link pythonInclude Statement
 hi link pythonBuiltin Keyword
 
 " Javascript
+" TODO: The third regex matches but doesn't highlight
+autocmd FileType javascript
+    \ syntax match javascriptFunction /^\s*\zs\w\+\ze = \(\w\+\|(\?\w\+\(, \w\+\)*)\?\) => / |
+    \ syntax match javascriptFunction /^\s*\zs\w\+\ze(.*)\s*{/ |
+    \ syntax match javascriptFunction /^\s*class\s\+\zs\w\+/
 hi link javaScriptBraces None
 hi link javaScriptEmbed String
 hi link javaScriptType Keyword
@@ -55,11 +61,9 @@ hi link javaScriptType Keyword
 hi htmlLink ctermfg=6
 
 " Shell
-function ShSyntaxOverrides()
-    syntax match shFunction /^\s*\zs\w\+\ze\s*()/
-    syntax match shStatement /while\|printf/
-endfunction
-autocmd FileType sh call ShSyntaxOverrides()
+autocmd FileType sh
+    \ syntax match shFunction /^\s*\zs\w\+\ze\s*()/ |
+    \ syntax match shStatement /while\|printf/
 hi link shSnglCase None
 hi link shCaseBar None
 hi link shTestOpr None
