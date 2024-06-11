@@ -58,11 +58,14 @@ autocmd FileType python
     \ call matchadd('Class', '^\s*class\s\+\zs\w\+')
 
 " Javascript
+" TODO: Do not match a function definition in a comment.
+" TODO: Define new syntax objects 'javaScriptClass', 'javaScriptMethod',
+" 'javaScriptArrowFunction', 'javaScriptLegacyFunction'.
 autocmd FileType javascript
     \ call clearmatches() |
     \ syntax clear javaScriptFunction |
-    \ call matchadd('Function', '\w\+\ze = (\w\+\(, \w\+\)*) =>') |
-    \ call matchadd('Function', 'function\s\+\zs\w\+')
+    \ call matchadd('Function', '\w\+\ze = (\?\w\+.*)\?\s\+=>\s\+{') |
+    \ call matchadd('Function', 'function\s\+\zs\w\+') |
 hi link javaScriptBraces None
 hi link javaScriptEmbed String
 hi link javaScriptType Keyword
