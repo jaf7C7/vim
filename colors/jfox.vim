@@ -17,7 +17,6 @@ set t_Co=8
 
 " UI Colors
 hi clear NonText
-hi ErrorMsg ctermfg=1 ctermbg=none
 hi Search ctermfg=0 ctermbg=7
 hi IncSearch ctermfg=3 ctermbg=0 cterm=bold,reverse
 hi MatchParen ctermfg=0 ctermbg=6
@@ -26,33 +25,44 @@ hi Title ctermfg=none cterm=bold
 hi PMenu ctermfg=none ctermbg=none cterm=reverse
 hi PMenuSel ctermfg=none ctermbg=none cterm=bold,reverse
 hi ColorColumn ctermfg=none ctermbg=none cterm=reverse
+hi Question ctermfg=4 cterm=bold
+hi Warning ctermfg=3 cterm=bold
+hi ErrorMsg ctermfg=1 ctermbg=none cterm=bold
 
 " Syntax Highlighting
+hi Comment ctermfg=4 cterm=bold
+hi Function ctermfg=2 cterm=bold
+hi Class ctermfg=6 cterm=bold
+hi String ctermfg=2
+hi Todo ctermfg=1 ctermbg=none cterm=bold,underline
 hi clear Statement
 hi clear Type
 hi clear Identifier
-hi clear String
 hi clear Number
 hi clear PreProc
 hi clear Delimiter
-hi Comment ctermfg=6
-hi Function ctermfg=none cterm=bold
 hi clear Error
 hi clear Special
-hi Todo ctermfg=6 ctermbg=none cterm=bold,reverse
 hi clear Operator
 hi clear Constant
+
+" Vim
+hi! link vimFuncName None
+hi link vimFunction Function
 
 " Python
 hi link pythonInclude Statement
 hi link pythonBuiltin Keyword
+autocmd FileType python
+    \ call clearmatches() |
+    \ call matchadd('Class', '^\s*class\s\+\zs\w\+')
 
 " Javascript
-" TODO: The third regex matches but doesn't highlight
 autocmd FileType javascript
-    \ syntax match javascriptFunction /^\s*\zs\w\+\ze = \(\w\+\|(\?\w\+\(, \w\+\)*)\?\) => / |
-    \ syntax match javascriptFunction /^\s*\zs\w\+\ze(.*)\s*{/ |
-    \ syntax match javascriptFunction /^\s*class\s\+\zs\w\+/
+    \ call clearmatches() |
+    \ syntax clear javaScriptFunction |
+    \ call matchadd('Function', '\w\+\ze = (\w\+\(, \w\+\)*) =>') |
+    \ call matchadd('Function', 'function\s\+\zs\w\+')
 hi link javaScriptBraces None
 hi link javaScriptEmbed String
 hi link javaScriptType Keyword
