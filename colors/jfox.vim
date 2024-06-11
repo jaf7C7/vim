@@ -58,15 +58,13 @@ autocmd FileType python
     \ call matchadd('Class', '^\s*class\s\+\zs\w\+')
 
 " Javascript
-" TODO: Do not match a function or class definition in a comment.
-" TODO: Define new syntax objects 'javaScriptClass', 'javaScriptMethod',
-" 'javaScriptArrowFunction', 'javaScriptLegacyFunction'.
+" TODO: Iron out the bugs.
 autocmd FileType javascript
     \ call clearmatches() |
     \ syntax clear javaScriptFunction |
-    \ call matchadd('Function', '\w\+\ze = (\?\w\+.*)\?\s\+=>\s\+{') |
-    \ call matchadd('Function', 'function\s\+\zs\w\+') |
-    \ call matchadd('Class', 'class\s\+\zs\w\+') |
+    \ call matchadd('Function', '^\s*\(\(export\|default\)\s\+\)\?\(\(var\|let\|const\)\s\+\)\w\+\ze = (\?\w\+.*)\?\s\+=>\s\+{') |
+    \ call matchadd('Function', '^\s*\(\(export\|default\)\s\+\)\?function\s\+\zs\w\+') |
+    \ call matchadd('Class', '^\s*\(\(export\|default\)\s\+\)*class\s\+\zs\w\+') |
     \ call matchadd('Function', '^\s\+\zs\w\+\(if\|return\|while\|for\)\@<!\ze\(\s*(\)')
 hi link javaScriptBraces None
 hi link javaScriptEmbed String
