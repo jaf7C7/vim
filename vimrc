@@ -11,7 +11,7 @@ set laststatus=1
 set mouse=
 set clipboard=
 set viminfo=
-set listchars=tab:\|\ ,trail:.
+set listchars=tab:\|\ ,trail:. list
 
 autocmd FileType vim set et sw=4 ts=4
 
