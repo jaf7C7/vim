@@ -58,7 +58,7 @@ autocmd FileType python
     \ call matchadd('Class', '^\s*class\s\+\zs\w\+')
 
 " Javascript
-" TODO: Do not match a function definition in a comment.
+" TODO: Do not match a function or class definition in a comment.
 " TODO: Define new syntax objects 'javaScriptClass', 'javaScriptMethod',
 " 'javaScriptArrowFunction', 'javaScriptLegacyFunction'.
 autocmd FileType javascript
