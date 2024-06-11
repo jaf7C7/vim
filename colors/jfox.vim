@@ -66,6 +66,8 @@ autocmd FileType javascript
     \ syntax clear javaScriptFunction |
     \ call matchadd('Function', '\w\+\ze = (\?\w\+.*)\?\s\+=>\s\+{') |
     \ call matchadd('Function', 'function\s\+\zs\w\+') |
+    \ call matchadd('Class', 'class\s\+\zs\w\+') |
+    \ call matchadd('Function', '^\s\+\zs\w\+\(if\|return\|while\|for\)\@<!\ze\(\s*(\)')
 hi link javaScriptBraces None
 hi link javaScriptEmbed String
 hi link javaScriptType Keyword
