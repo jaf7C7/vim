@@ -54,33 +54,27 @@ hi link vimFunction Function
 " Python
 hi link pythonInclude Statement
 hi link pythonBuiltin Keyword
+hi link pythonClass Class
 autocmd FileType python
     \ call clearmatches() |
-    \ call matchadd('Class', '^\s*class\s\+\zs\w\+')
+    \ call matchadd('pythonClass', '^\s*class\s\+\zs\w\+')
 
 " Javascript
-" XXX: Test cases:
-"    - const charCodes = Array.from(word).map((char) => this.charToNumber(char));  // Match
-"    - const fillEncodeFence = ({
-"        fence,
-"        currentRail,
-"        direction,
-"        chars,
-"      }) => {
-"        ...
-"      };  // Match
-"    - let encryptedCharIndex = (charIndex + shift) % alphabet.length;  // No match
-"    - export const hillCipherDecrypt = () =>  ... // Match
-autocmd FileType javascript
-    \ call clearmatches() |
-    \ syntax clear javaScriptFunction |
-    \ call matchadd('Function', '^\s*\(\(export\|default\)\s\+\)*function\s\+\zs\w\+') |
-    \ call matchadd('Class', '^\s*\(\(export\|default\)\s\+\)*class\s\+\zs\w\+') |
-    \ call matchadd('Function', '^\s\+\zs\w\+\(if\|return\|while\|for\|switch\)\@<!\ze\(\s*(\)') |
-    \ call matchadd('Function', '^\s*\(\(export\|default\)\s\+\)*\(\(var\|let\|const\)\s\+\)\zs\w\+\ze = \(\w\+\|(\(\w\+\( = .*\)\?\(, \)\?\)*)\|({\_[^}]*})\) =>')
+" TODO: Indented function calls match as methods
 hi link javaScriptBraces None
 hi link javaScriptEmbed String
 hi link javaScriptType Keyword
+hi link javaScriptMethod Function
+hi link javaScriptClass Class
+hi link javaScriptArrowFunction Function
+"hi link javaScript
+autocmd FileType javascript
+    \ call clearmatches() |
+    \ syntax clear javaScriptFunction |
+    \ call matchadd('javaScriptFunction', '^\s*\(\(export\|default\)\s\+\)*function\s\+\zs\w\+') |
+    \ call matchadd('javaScriptClass', '^\s*\(\(export\|default\)\s\+\)*class\s\+\zs\w\+') |
+    \ call matchadd('javaScriptMethod', '^\s\+\zs\w\+\(if\|return\|while\|for\|switch\)\@<!\ze\(\s*(\)') |
+    \ call matchadd('javaScriptArrowFunction', '^\s*\(\(export\|default\)\s\+\)*\(\(var\|let\|const\)\s\+\)\zs\w\+\ze = \(\w\+\|(\(\w\+\( = .*\)\?\(, \)\?\)*)\|({\_[^}]*})\) =>')
 
 " HTML/Markdown
 hi htmlLink ctermfg=6
