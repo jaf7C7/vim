@@ -28,7 +28,7 @@ hi ColorColumn ctermfg=none ctermbg=none cterm=reverse
 hi Question ctermfg=4 cterm=bold
 hi Warning ctermfg=3 cterm=bold
 hi ErrorMsg ctermfg=1 ctermbg=none cterm=bold
-hi SpecialKey ctermfg=5 cterm=bold
+hi SpecialKey ctermfg=4 cterm=bold
 
 " Syntax Highlighting
 hi Comment ctermfg=4 cterm=bold
