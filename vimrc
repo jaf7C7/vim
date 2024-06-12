@@ -11,9 +11,11 @@ set laststatus=1
 set mouse=
 set clipboard=
 set viminfo=
-set listchars=tab:\|\ ,trail:. list
+set listchars=tab:\.\ ,trail:. list
+set softtabstop=-1
+set expandtab
 
-autocmd FileType vim set et sw=4 ts=4
-autocmd FileType javascript,html,css set et sw=2 ts=2
+autocmd FileType vim set sw=4
+autocmd FileType javascript,html,css set sw=2
 
 colorscheme jfox
