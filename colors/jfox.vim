@@ -70,6 +70,7 @@ autocmd FileType python
 "        ...
 "      };  // Match
 "    - let encryptedCharIndex = (charIndex + shift) % alphabet.length;  // No match
+"    - export const hillCipherDecrypt = () =>  ... // Match
 autocmd FileType javascript
     \ call clearmatches() |
     \ syntax clear javaScriptFunction |
