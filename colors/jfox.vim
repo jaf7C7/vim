@@ -60,7 +60,6 @@ autocmd FileType python
     \ call matchadd('pythonClass', '^\s*class\s\+\zs\w\+')
 
 " Javascript
-" TODO: Indented function calls match as methods
 hi link javaScriptBraces None
 hi link javaScriptEmbed String
 hi link javaScriptType Keyword
