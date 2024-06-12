@@ -73,8 +73,8 @@ autocmd FileType javascript
     \ syntax clear javaScriptFunction |
     \ call matchadd('javaScriptFunction', '^\s*\(\(export\|default\)\s\+\)*function\s\+\zs\w\+') |
     \ call matchadd('javaScriptClass', '^\s*\(\(export\|default\)\s\+\)*class\s\+\zs\w\+') |
-    \ call matchadd('javaScriptMethod', '^\s\+\zs\w\+\(if\|return\|while\|for\|switch\)\@<!\ze\(\s*(\)') |
-    \ call matchadd('javaScriptArrowFunction', '^\s*\(\(export\|default\)\s\+\)*\(\(var\|let\|const\)\s\+\)\zs\w\+\ze = \(\w\+\|(\(\w\+\( = .*\)\?\(, \)\?\)*)\|({\_[^}]*})\) =>')
+    \ call matchadd('javaScriptMethod', '^\s\+\zs\w\+\(if\|return\|while\|for\|switch\)\@<!\ze\(\s*(.*)\s*{\)') |
+    \ call matchadd('javaScriptArrowFunction', '^\s*\(\(export\|default\)\s\+\)*\(\(var\|let\|const\)\s\+\)\zs\w\+\ze\s\+=\s\+\(\w\+\|(\(\w\+\(\s\+=\s\+.*\)\?\(,\s\+\)\?\)*)\|({\_[^}]*})\)\s\+=>')
 
 " HTML/Markdown
 hi htmlLink ctermfg=6
