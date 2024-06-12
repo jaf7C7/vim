@@ -59,8 +59,17 @@ autocmd FileType python
     \ call matchadd('Class', '^\s*class\s\+\zs\w\+')
 
 " Javascript
-" TODO: Iron out the bugs:
-" - [ ] const charCodes = Array.from(word).map((char) => this.charToNumber(char));  // For example
+" TODO: Handle edge cases, for example:
+" - [ ] const charCodes = Array.from(word).map((char) => this.charToNumber(char));  // Should match but doesn't
+" - [ ] const fillEncodeFence = ({
+"         fence,
+"         currentRail,
+"         direction,
+"         chars,
+"       }) => {
+"         ...
+"       };  // Should match but doesn't
+
 autocmd FileType javascript
     \ call clearmatches() |
     \ syntax clear javaScriptFunction |
