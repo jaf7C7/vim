@@ -14,5 +14,6 @@ set viminfo=
 set listchars=tab:\|\ ,trail:. list
 
 autocmd FileType vim set et sw=4 ts=4
+autocmd FileType javascript,html,css set et sw=2 ts=2
 
 colorscheme jfox
