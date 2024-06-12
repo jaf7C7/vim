@@ -77,8 +77,7 @@ autocmd FileType javascript
     \ call matchadd('Function', '^\s*\(\(export\|default\)\s\+\)*function\s\+\zs\w\+') |
     \ call matchadd('Class', '^\s*\(\(export\|default\)\s\+\)*class\s\+\zs\w\+') |
     \ call matchadd('Function', '^\s\+\zs\w\+\(if\|return\|while\|for\|switch\)\@<!\ze\(\s*(\)') |
-    \ call matchadd('Function', '^\s*\(\(export\|default\)\s\+\)*\(\(var\|let\|const\)\s\+\)\zs\w\+\ze = (\_.*) =>')
-    "\ call matchadd('Function', '^\s*\(\(export\|default\)\s\+\)*\(\(var\|let\|const\)\s\+\)\zs\w\+\ze = (\?\(\w\+\)\?.*)\?\s\+=>\s\+{')
+    \ call matchadd('Function', '^\s*\(\(export\|default\)\s\+\)*\(\(var\|let\|const\)\s\+\)\zs\w\+\ze = \(\w\+\|(\(\w\+\( = .*\)\?\(, \)\?\)*)\) =>')
 hi link javaScriptBraces None
 hi link javaScriptEmbed String
 hi link javaScriptType Keyword
