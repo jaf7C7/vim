@@ -59,24 +59,25 @@ autocmd FileType python
     \ call matchadd('Class', '^\s*class\s\+\zs\w\+')
 
 " Javascript
-" TODO: Handle edge cases, for example:
-" - [ ] const charCodes = Array.from(word).map((char) => this.charToNumber(char));  // Should match but doesn't
-" - [ ] const fillEncodeFence = ({
-"         fence,
-"         currentRail,
-"         direction,
-"         chars,
-"       }) => {
-"         ...
-"       };  // Should match but doesn't
-
+" XXX: Test cases:
+"    - const charCodes = Array.from(word).map((char) => this.charToNumber(char));  // Match
+"    - const fillEncodeFence = ({
+"        fence,
+"        currentRail,
+"        direction,
+"        chars,
+"      }) => {
+"        ...
+"      };  // Match
+"    - let encryptedCharIndex = (charIndex + shift) % alphabet.length;  // No match
 autocmd FileType javascript
     \ call clearmatches() |
     \ syntax clear javaScriptFunction |
-    \ call matchadd('Function', '^\s*\(\(export\|default\)\s\+\)*\(\(var\|let\|const\)\s\+\)\zs\w\+\ze = (\?\(\w\+\)\?.*)\?\s\+=>\s\+{') |
     \ call matchadd('Function', '^\s*\(\(export\|default\)\s\+\)*function\s\+\zs\w\+') |
     \ call matchadd('Class', '^\s*\(\(export\|default\)\s\+\)*class\s\+\zs\w\+') |
-    \ call matchadd('Function', '^\s\+\zs\w\+\(if\|return\|while\|for\|switch\)\@<!\ze\(\s*(\)')
+    \ call matchadd('Function', '^\s\+\zs\w\+\(if\|return\|while\|for\|switch\)\@<!\ze\(\s*(\)') |
+    \ call matchadd('Function', '^\s*\(\(export\|default\)\s\+\)*\(\(var\|let\|const\)\s\+\)\zs\w\+\ze = (\_.*) =>')
+    "\ call matchadd('Function', '^\s*\(\(export\|default\)\s\+\)*\(\(var\|let\|const\)\s\+\)\zs\w\+\ze = (\?\(\w\+\)\?.*)\?\s\+=>\s\+{')
 hi link javaScriptBraces None
 hi link javaScriptEmbed String
 hi link javaScriptType Keyword
