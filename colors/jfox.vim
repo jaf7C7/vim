@@ -59,7 +59,8 @@ autocmd FileType python
     \ call matchadd('Class', '^\s*class\s\+\zs\w\+')
 
 " Javascript
-" TODO: Iron out the bugs.
+" TODO: Iron out the bugs:
+" - [ ] const charCodes = Array.from(word).map((char) => this.charToNumber(char));  // For example
 autocmd FileType javascript
     \ call clearmatches() |
     \ syntax clear javaScriptFunction |
