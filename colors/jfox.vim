@@ -61,9 +61,15 @@ hi link pythonInclude Statement
 hi link pythonBuiltin Keyword
 hi link pythonClass Class
 hi pythonDecoratorName ctermfg=6
-autocmd FileType python
-    \ call clearmatches() |
-    \ call matchadd('pythonClass', '^\s*class\s\+\zs\w\+')
+autocmd FileType python call AddPythonHighlighting()
+
+function! AddPythonHighlighting()
+    if exists('b:custom_syntax_highlights')
+        return
+    endif
+    let b:custom_syntax_highlights = [matchadd('pythonClass', '^\s*class\s\+\zs\w\+')]
+endfunction
+
 
 " Javascript
 hi link javaScriptBraces None
@@ -73,24 +79,35 @@ hi link javaScriptMethod Function
 hi link javaScriptClass Class
 hi link javaScriptArrowFunction Function
 hi link javaScriptFunction Function
-autocmd FileType javascript
-    \ call clearmatches() |
-    \ syntax clear javaScriptFunction |
-    \ call matchadd('javaScriptFunction', '^\s*\(\(export\|default\)\s\+\)*function\s\+\zs\w\+') |
-    \ call matchadd('javaScriptClass', '^\s*\(\(export\|default\)\s\+\)*class\s\+\zs\w\+') |
-    \ call matchadd('javaScriptMethod', '^\s\+\zs\w\+\(if\|return\|while\|for\|switch\)\@<!\ze\(\s*(.*)\s*{\)') |
-    \ call matchadd('javaScriptArrowFunction', '^\s*\(\(export\|default\)\s\+\)*\(\(var\|let\|const\)\s\+\)\zs\w\+\ze\s\+=\s\+\(\w\+\|(\(\w\+\(\s\+=\s\+.*\)\?\(,\s\+\)\?\)*)\|({\_[^}]*})\)\s\+=>')
+autocmd FileType javascript call AddJavaScriptHighlighting()
+
+function! AddJavaScriptHighlighting()
+    syntax clear javaScriptFunction
+    if exists('b:custom_syntax_highlights')
+        return
+    endif
+    let b:custom_syntax_highlights = [
+    \    matchadd('javaScriptFunction', '^\s*\(\(export\|default\)\s\+\)*function\s\+\zs\w\+'),
+    \    matchadd('javaScriptClass', '^\s*\(\(export\|default\)\s\+\)*class\s\+\zs\w\+'),
+    \    matchadd('javaScriptMethod', '^\s\+\zs\w\+\(if\|return\|while\|for\|switch\)\@<!\ze\(\s*(.*)\s*{\)'),
+    \    matchadd('javaScriptArrowFunction', '^\s*\(\(export\|default\)\s\+\)*\(\(var\|let\|const\)\s\+\)\zs\w\+\ze\s\+=\s\+\(\w\+\|(\(\w\+\(\s\+=\s\+.*\)\?\(,\s\+\)\?\)*)\|({\_[^}]*})\)\s\+=>'), |
+    \]
+endfunction
+
 
 " HTML/Markdown
 hi htmlLink ctermfg=6
 
 
 " Shell
-autocmd FileType sh
-    \ syntax match shFunction /^\s*\zs\w\+\ze\s*()/ |
-    \ syntax match shStatement /while\|printf/
 hi link shSnglCase None
 hi link shCaseBar None
 hi link shTestOpr None
 hi link shQuote String
 hi link vimPatSep vimSynRegPat
+autocmd FileType sh call AddShellHighlighting()
+
+function! AddShellHighlighting()
+    syntax match shFunction /^\s*\zs\w\+\ze\s*()/
+    syntax match shStatement /while\|printf/
+endfunction
