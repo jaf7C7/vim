@@ -67,7 +67,8 @@ function! AddPythonHighlighting()
     if exists('b:custom_syntax_highlights')
         return
     endif
-    let b:custom_syntax_highlights = [matchadd('pythonClass', '^\s*class\s\+\zs\w\+')]
+    let b:custom_syntax_highlights = []
+    let b:custom_syntax_highlights += [matchadd('pythonClass', '^\s*class\s\+\zs\w\+')]
 endfunction
 
 
@@ -86,12 +87,11 @@ function! AddJavaScriptHighlighting()
     if exists('b:custom_syntax_highlights')
         return
     endif
-    let b:custom_syntax_highlights = [
-    \    matchadd('javaScriptFunction', '^\s*\(\(export\|default\)\s\+\)*function\s\+\zs\w\+'),
-    \    matchadd('javaScriptClass', '^\s*\(\(export\|default\)\s\+\)*class\s\+\zs\w\+'),
-    \    matchadd('javaScriptMethod', '^\s\+\zs\w\+\(if\|return\|while\|for\|switch\)\@<!\ze\(\s*(.*)\s*{\)'),
-    \    matchadd('javaScriptArrowFunction', '^\s*\(\(export\|default\)\s\+\)*\(\(var\|let\|const\)\s\+\)\zs\w\+\ze\s\+=\s\+\(\w\+\|(\(\w\+\(\s\+=\s\+.*\)\?\(,\s\+\)\?\)*)\|({\_[^}]*})\)\s\+=>'), |
-    \]
+    let b:custom_syntax_highlights = []
+    let b:custom_syntax_highlights += [matchadd('javaScriptFunction', '^\s*\(\(export\|default\)\s\+\)*function\s\+\zs\w\+')]
+    let b:custom_syntax_highlights += [matchadd('javaScriptClass', '^\s*\(\(export\|default\)\s\+\)*class\s\+\zs\w\+')]
+    let b:custom_syntax_highlights += [matchadd('javaScriptMethod', '^\s\+\zs\w\+\(if\|return\|while\|for\|switch\)\@<!\ze\(\s*(.*)\s*{\)')]
+    let b:custom_syntax_highlights += [matchadd('javaScriptArrowFunction', '^\s*\(\(export\|default\)\s\+\)*\(\(var\|let\|const\)\s\+\)\zs\w\+\ze\s\+=\s\+\(\w\+\|(\(\w\+\(\s\+=\s\+.*\)\?\(,\s\+\)\?\)*)\|({\_[^}]*})\)\s\+=>')]
 endfunction
 
 
