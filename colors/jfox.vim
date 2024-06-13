@@ -24,7 +24,7 @@ hi MatchParen ctermfg=0 ctermbg=6
 hi clear Directory
 hi Title ctermfg=none cterm=bold
 hi PMenu ctermfg=none ctermbg=none cterm=reverse
-hi PMenuSel ctermfg=none ctermbg=none cterm=bold,reverse
+hi PMenuSel ctermfg=4 ctermbg=none cterm=bold,reverse
 hi ColorColumn ctermfg=7 ctermbg=4 cterm=none
 hi Question ctermfg=4 cterm=bold
 hi Warning ctermfg=3 cterm=bold
