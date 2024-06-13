@@ -24,7 +24,7 @@ hi clear Directory
 hi Title ctermfg=none cterm=bold
 hi PMenu ctermfg=none ctermbg=none cterm=reverse
 hi PMenuSel ctermfg=none ctermbg=none cterm=bold,reverse
-hi ColorColumn ctermfg=none ctermbg=none cterm=reverse
+hi ColorColumn ctermfg=7 ctermbg=4 cterm=none
 hi Question ctermfg=4 cterm=bold
 hi Warning ctermfg=3 cterm=bold
 hi ErrorMsg ctermfg=1 ctermbg=none cterm=bold
@@ -55,6 +55,7 @@ hi link vimFunction Function
 hi link pythonInclude Statement
 hi link pythonBuiltin Keyword
 hi link pythonClass Class
+hi pythonDecoratorName ctermfg=6
 autocmd FileType python
     \ call clearmatches() |
     \ call matchadd('pythonClass', '^\s*class\s\+\zs\w\+')
@@ -66,7 +67,7 @@ hi link javaScriptType Keyword
 hi link javaScriptMethod Function
 hi link javaScriptClass Class
 hi link javaScriptArrowFunction Function
-"hi link javaScript
+hi link javaScriptFunction Function
 autocmd FileType javascript
     \ call clearmatches() |
     \ syntax clear javaScriptFunction |
