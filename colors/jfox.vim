@@ -7,11 +7,12 @@ set bg&
 hi clear
 
 " Load the syntax highlighting defaults, if it's enabled.
-if exists("syntax_on")
+if exists('syntax_on')
     syntax reset
 endif
 
-let colors_name = "jfox"
+
+let colors_name = 'jfox'
 
 set t_Co=8
 
