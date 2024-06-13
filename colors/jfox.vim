@@ -16,6 +16,7 @@ let colors_name = 'jfox'
 
 set t_Co=8
 
+
 " UI Colors
 hi clear NonText
 hi Search ctermfg=0 ctermbg=7
@@ -30,6 +31,7 @@ hi Question ctermfg=4 cterm=bold
 hi Warning ctermfg=3 cterm=bold
 hi ErrorMsg ctermfg=1 ctermbg=none cterm=bold
 hi SpecialKey ctermfg=4 cterm=bold
+
 
 " Syntax Highlighting
 hi Comment ctermfg=4 cterm=bold
@@ -48,9 +50,11 @@ hi clear Special
 hi clear Operator
 hi clear Constant
 
+
 " Vim
 hi! link vimFuncName None
 hi link vimFunction Function
+
 
 " Python
 hi link pythonInclude Statement
@@ -79,6 +83,7 @@ autocmd FileType javascript
 
 " HTML/Markdown
 hi htmlLink ctermfg=6
+
 
 " Shell
 autocmd FileType sh
