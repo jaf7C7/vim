@@ -24,7 +24,7 @@ set laststatus=1
 set mouse=
 set clipboard=
 set viminfo=
-set listchars=tab:\.\ ,trail:. list
+set listchars=tab:\›\ ,trail:· list
 set softtabstop=-1
 set expandtab
 
