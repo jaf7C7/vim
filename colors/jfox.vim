@@ -108,6 +108,8 @@ hi link vimPatSep vimSynRegPat
 autocmd FileType sh call AddShellHighlighting()
 
 function! AddShellHighlighting()
-    syntax match shFunction /^\s*\zs\w\+\ze\s*()/
+    syntax clear shFunctionKey
+    syntax clear shFunctionOne
+    syntax match shFunction /\(^\|&&\|||\|[&;]\)\s*\(function\s\+\)\?\zs\w\+\ze\s*()/
     syntax match shStatement /while\|printf/
 endfunction
