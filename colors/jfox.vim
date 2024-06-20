@@ -30,7 +30,7 @@ hi ColorColumn ctermfg=7 ctermbg=4 cterm=none
 hi Question ctermfg=4 cterm=bold
 hi Warning ctermfg=3 cterm=bold
 hi ErrorMsg ctermfg=1 ctermbg=none cterm=bold
-hi SpecialKey ctermfg=4 cterm=bold
+hi SpecialKey ctermfg=1 cterm=none
 
 
 " Syntax Highlighting
