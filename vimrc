@@ -2,7 +2,8 @@ let g:netrw_dirhistmax=0
 set laststatus=1
 set mouse=
 set clipboard=
-set listchars=tab:\›\ ,trail:· list
+set list
+set listchars=tab:\›\ ,trail:·
 set softtabstop=-1
 set expandtab
 
