@@ -111,5 +111,6 @@ function! AddShellHighlighting()
     syntax clear shFunctionKey
     syntax clear shFunctionOne
     syntax match shFunction /\(^\|&&\|||\|[&;]\)\s*\(function\s\+\)\?\zs\w\+\ze\s*()/
-    syntax match shStatement /while\|printf/
+    syntax match shStatement /printf/
+    syntax match shStatement /^\s\+\zs\(for\|while\|done\|do\)/
 endfunction
