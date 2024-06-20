@@ -2,7 +2,6 @@ let g:netrw_dirhistmax=0
 set laststatus=1
 set mouse=
 set clipboard=
-set viminfo=
 set listchars=tab:\›\ ,trail:· list
 set softtabstop=-1
 set expandtab
