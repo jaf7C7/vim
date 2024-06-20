@@ -18,8 +18,8 @@ set listchars=tab:\›\ ,trail:· list
 set softtabstop=-1
 set expandtab
 
-autocmd FileType sh set sw=4
-autocmd FileType vim set sw=4
-autocmd FileType javascript,html,css set sw=2
+
+autocmd FileType sh,vim set sw=4
+autocmd FileType javascript,html,css,markdown set sw=2
 
 colorscheme jfox
