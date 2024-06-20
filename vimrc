@@ -6,18 +6,8 @@ function! SynStack()
 endfunc
 nnoremap gs :call SynStack()<CR>
 
-
-" For Emacs-style editing on the command-line:
-cnoremap <C-A> <Home>
-cnoremap <C-B> <Left>
-cnoremap <C-D> <Del>
-cnoremap <C-E> <End>
-cnoremap <C-F> <Right>
-cnoremap <C-N> <Down>
-cnoremap <C-P> <Up>
-cnoremap <Esc><C-B> <S-Left>
-cnoremap <Esc><C-F> <S-Right>
-
+cnoremap <C-BS> <C-W>
+cnoremap <C-Del> <Del><C-Right><C-W>
 
 let g:netrw_dirhistmax=0
 set laststatus=1
