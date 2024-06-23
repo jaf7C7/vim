@@ -6,6 +6,7 @@ set list
 set listchars=tab:›\ ,trail:·
 set shiftwidth=4
 set expandtab
+set nohlsearch
 set noloadplugins
 source $VIMRUNTIME/plugin/matchparen.vim
 
