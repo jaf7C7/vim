@@ -3,7 +3,7 @@ set laststatus=1
 set mouse=
 set clipboard=
 set list
-set listchars=tab:\›\ ,trail:·
+set listchars=tab:›\ ,trail:·
 set softtabstop=-1
 set expandtab
 
