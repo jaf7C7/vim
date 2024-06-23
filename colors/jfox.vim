@@ -37,7 +37,7 @@ hi SpecialKey ctermfg=1 cterm=none
 hi Comment ctermfg=4 cterm=bold
 hi Function ctermfg=2 cterm=bold
 hi Class ctermfg=6 cterm=bold
-hi String ctermfg=2
+hi String ctermfg=3
 hi Todo ctermfg=1 ctermbg=none cterm=bold
 hi Ignore ctermfg=0 ctermbg=0
 hi clear Statement
