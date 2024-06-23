@@ -6,6 +6,8 @@ set list
 set listchars=tab:›\ ,trail:·
 set softtabstop=-1
 set expandtab
+set noloadplugins
+source $VIMRUNTIME/plugin/matchparen.vim
 
 autocmd FileType sh,vim set sw=4
 autocmd FileType javascript,html,css,markdown set sw=2
