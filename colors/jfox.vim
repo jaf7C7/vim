@@ -39,6 +39,7 @@ hi Function ctermfg=2 cterm=bold
 hi Class ctermfg=6 cterm=bold
 hi String ctermfg=2
 hi Todo ctermfg=1 ctermbg=none cterm=bold
+hi Ignore ctermfg=0 ctermbg=0
 hi clear Statement
 hi clear Type
 hi clear Identifier
@@ -50,10 +51,10 @@ hi clear Special
 hi clear Operator
 hi clear Constant
 
-
 " Vim
 hi! link vimFuncName None
 hi link vimFunction Function
+hi helpHyperTextJump ctermfg=6
 
 
 " Python
