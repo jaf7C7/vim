@@ -38,7 +38,7 @@ hi Comment ctermfg=4 cterm=bold
 hi Function ctermfg=2 cterm=bold
 hi Class ctermfg=6 cterm=bold
 hi String ctermfg=2
-hi Todo ctermfg=1 ctermbg=none cterm=bold,underline
+hi Todo ctermfg=1 ctermbg=none cterm=bold
 hi clear Statement
 hi clear Type
 hi clear Identifier
