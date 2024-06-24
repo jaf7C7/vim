@@ -36,8 +36,8 @@ hi SpecialKey ctermfg=1 cterm=none
 " Syntax Highlighting
 hi Comment ctermfg=4 cterm=bold
 hi Function ctermfg=2 cterm=bold
-hi Class ctermfg=5 cterm=bold
-hi String ctermfg=6
+hi Class ctermfg=6 cterm=bold
+hi String ctermfg=2
 hi Todo ctermfg=1 ctermbg=none cterm=bold
 hi Ignore ctermfg=0 ctermbg=0
 hi clear Statement
@@ -61,7 +61,7 @@ hi helpHyperTextJump ctermfg=6
 hi link pythonInclude Statement
 hi link pythonBuiltin Keyword
 hi link pythonClass Class
-hi pythonDecoratorName ctermfg=3
+hi pythonDecoratorName ctermfg=6
 autocmd FileType python call AddPythonHighlighting()
 
 function! AddPythonHighlighting()
