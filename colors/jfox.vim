@@ -48,6 +48,9 @@ hi clear Error
 hi clear Special
 hi clear Operator
 hi clear Constant
+hi TrailingSpace ctermbg=1
+au InsertEnter * match TrailingSpace /\s\+\%#\@<!$/
+au InsertLeave * match TrailingSpace /\s\+$/
 
 " Vim
 hi! link vimFuncName None
