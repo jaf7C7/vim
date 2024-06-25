@@ -26,7 +26,7 @@ hi PMenu ctermfg=none ctermbg=none cterm=reverse
 hi PMenuSel ctermfg=4 ctermbg=none cterm=bold,reverse
 hi ColorColumn ctermfg=7 ctermbg=4 cterm=bold
 hi Question ctermfg=4 cterm=bold
-hi Warning ctermfg=3 cterm=bold
+hi WarningMsg ctermfg=3 cterm=bold
 hi ErrorMsg ctermfg=1 ctermbg=none cterm=bold
 hi SpecialKey ctermfg=1 cterm=none
 
