@@ -9,6 +9,9 @@ set nohlsearch
 set noloadplugins
 source $VIMRUNTIME/plugin/matchparen.vim
 
+filetype indent off
+
+autocmd FileType sh,zsh,bash set sw=8 noet
 autocmd FileType javascript,html,css,markdown set sw=2
 
 colorscheme jfox
