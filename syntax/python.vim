@@ -4,7 +4,14 @@
 " See: https://vimhelp.org/usr_44.txt.html
 "      https://vimhelp.org/syntax.txt.html
 
+if exists('b:current_syntax')
+    finish
+endif
+
 let b:current_syntax = 'python'
+
+" XXX: This may be slow for very large files
+syntax sync fromstart
 
 syn match pythonComment '#.*$' contains=pythonTODO
 syn keyword pythonTodo TODO DEBUG XXX contained
