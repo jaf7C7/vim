@@ -52,6 +52,7 @@ hi clear Constant
 " Vim
 hi! link vimFuncName None
 hi link vimFunction Function
+hi link vimPatSep vimSynRegPat
 hi helpHyperTextJump ctermfg=6
 
 
@@ -103,7 +104,6 @@ hi link shSnglCase None
 hi link shCaseBar None
 hi link shTestOpr None
 hi link shQuote String
-hi link vimPatSep vimSynRegPat
 autocmd FileType sh call AddShellHighlighting()
 
 function! AddShellHighlighting()
