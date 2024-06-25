@@ -14,8 +14,6 @@ endif
 
 let colors_name = 'jfox'
 
-set t_Co=8
-
 
 " UI Colors
 hi clear NonText
@@ -26,7 +24,7 @@ hi clear Directory
 hi Title ctermfg=none cterm=bold
 hi PMenu ctermfg=none ctermbg=none cterm=reverse
 hi PMenuSel ctermfg=4 ctermbg=none cterm=bold,reverse
-hi ColorColumn ctermfg=7 ctermbg=4 cterm=none
+hi ColorColumn ctermfg=7 ctermbg=4 cterm=bold
 hi Question ctermfg=4 cterm=bold
 hi Warning ctermfg=3 cterm=bold
 hi ErrorMsg ctermfg=1 ctermbg=none cterm=bold
