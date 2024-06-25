@@ -104,6 +104,8 @@ hi link shSnglCase None
 hi link shCaseBar None
 hi link shTestOpr None
 hi link shQuote String
+hi link shFunction Function
+hi link zshFunction Function
 autocmd FileType sh call AddShellHighlighting()
 
 function! AddShellHighlighting()
