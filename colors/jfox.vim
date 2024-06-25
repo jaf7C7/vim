@@ -32,7 +32,7 @@ hi SpecialKey ctermfg=1 cterm=none
 
 
 " Syntax Highlighting
-hi Comment ctermfg=4 cterm=bold
+hi Comment ctermfg=12 cterm=none
 hi Function ctermfg=2 cterm=bold
 hi Class ctermfg=6 cterm=bold
 hi String ctermfg=2
@@ -61,9 +61,9 @@ hi helpHyperTextJump ctermfg=6
 
 " Python
 hi link pythonInclude Statement
-hi link pythonBuiltin Keyword
+hi link pythonBuiltin None
 hi link pythonClass Class
-hi pythonDecoratorName ctermfg=6
+hi link pythonDecoratorName None
 autocmd FileType python call AddPythonHighlighting()
 
 function! AddPythonHighlighting()
@@ -78,11 +78,13 @@ endfunction
 " Javascript
 hi link javaScriptBraces None
 hi link javaScriptEmbed String
-hi link javaScriptType Keyword
+hi link javaScriptType None
 hi link javaScriptMethod Function
 hi link javaScriptClass Class
 hi link javaScriptArrowFunction Function
 hi link javaScriptFunction Function
+hi link javaScriptIdentifier Statement
+hi javaScriptType ctermfg=6
 autocmd FileType javascript call AddJavaScriptHighlighting()
 
 function! AddJavaScriptHighlighting()
@@ -115,6 +117,10 @@ function! AddShellHighlighting()
     syntax clear shFunctionKey
     syntax clear shFunctionOne
     syntax match shFunction /\(^\|&&\|||\|[&;]\)\s*\(function\s\+\)\?\zs\w\+\ze\s*()/
-    syntax match shStatement /printf/
     syntax match shStatement /^\s\+\zs\(for\|while\|done\|do\)/
+    if exists('b:custom_syntax_highlights')
+        return
+    endif
+    let b:custom_syntax_highlights = []
+    let b:custom_syntax_highlights += [matchadd('Statement', 'for\s\+\w\+\s\+\zsin\ze')]
 endfunction
