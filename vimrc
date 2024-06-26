@@ -1,4 +1,6 @@
-let g:netrw_dirhistmax=0
+unlet! skip_defaults_vim
+source $VIMRUNTIME/defaults.vim
+
 set laststatus=1
 set mouse=
 set clipboard=
