@@ -5,16 +5,14 @@ set laststatus=1
 set mouse=
 set clipboard=
 set listchars=tab:›\ ,trail:·
-set shiftwidth=4
-set expandtab
+set shiftwidth=0  " Follow tabstop
 set nohlsearch
 set noloadplugins
 source $VIMRUNTIME/plugin/matchparen.vim
+filetype indent plugin off
 
-filetype indent off
-
-autocmd FileType sh,zsh,bash set sw=8 noet
-autocmd FileType javascript,html,css,markdown set sw=2
+autocmd FileType sh,zsh,bash setlocal ts=8 noet
+autocmd FileType javascript,html,css setlocal ts=2 et
 
 colorscheme jfox
 
