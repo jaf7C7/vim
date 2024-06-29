@@ -16,17 +16,12 @@ syntax sync fromstart
 syn match javaScriptComment '\/\/.*$' contains=CONTAINED,javaScriptTODO
 syn region javaScriptComment start='\/\*\*\?' end='\*\/$' contains=CONTAINED,javaScriptTODO
 syn keyword javaScriptTodo TODO DEBUG XXX contained
-syn region javaScriptString
-    \ start=/\z(['"`]\)/ end=/\z1/ skip=/\\\\\|\\\z1/
-    \ contains=CONTAINED
+syn region javaScriptString start=/\z(['"`]\)/ end=/\z1/ skip=/\\\\\|\\\z1/ contains=CONTAINED
 syn match javaScriptArrow /=>/
-syn match javaScriptArrowFunction
-    \ /\(^\|;\)\s*\(\(export\|default\)\s\+\)*\(\(var\|let\|const\)\s\+\)\zs\w\+\ze\s\+=\s\+\(\w\+\|(\(\w\+\(\s\+=\s\+.*\)\?\(,\s\+\)\?\)*)\|({\_[^}]*})\)\s\+=>/
+syn match javaScriptArrowFunction /\(^\|;\)\s*\(\(export\|default\)\s\+\)*\(\(var\|let\|const\)\s\+\)\zs\w\+\ze\s\+=\s\+\(\w\+\|(\(\w\+\(\s\+=\s\+.*\)\?\(,\s\+\)\?\)*)\|({\_[^}]*})\)\s\+=>/
 syn match javaScriptFunction  /\(^\|;\)\s*\(\(export\|default\)\s\+\)*function\s\+\zs\w\+/
 syn match javaScriptClass /^\s*\(\(export\|default\)\s\+\)*class\s\+\zs\w\+/
-" XXX: This could be buggy
-syn match javaScriptMethod
-    \ /^\s\+\(static\s\+\)\?\zs\w\+\(if\|return\|while\|for\|switch\)\@<!\ze\(\s*(.*)\s*{\)/
+syn match javaScriptMethod /^\s\+\(static\s\+\)\?\zs\w\+\(if\|return\|while\|for\|switch\)\@<!\ze\(\s*(.*)\s*{\)/
 syntax match javaScriptParen /[][(){}]/
 
 
