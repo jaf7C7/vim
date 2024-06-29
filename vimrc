@@ -14,7 +14,8 @@ source $VIMRUNTIME/plugin/matchparen.vim
 filetype indent plugin off
 
 autocmd FileType sh,zsh,bash setlocal ts=8 noet
-autocmd FileType javascript,html,css setlocal ts=2 et
+autocmd FileType html setlocal ts=2 et
+autocmd FileType python,javascript,vim setlocal ts=4 et
 
 colorscheme jfox
 
