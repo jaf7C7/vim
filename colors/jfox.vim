@@ -29,6 +29,7 @@ hi Question ctermfg=4 cterm=bold
 hi WarningMsg ctermfg=3 cterm=bold
 hi ErrorMsg ctermfg=1 ctermbg=none cterm=bold
 hi SpecialKey ctermfg=1 cterm=none
+hi LineNr ctermfg=8
 
 
 " Syntax Highlighting
