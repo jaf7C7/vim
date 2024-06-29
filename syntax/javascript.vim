@@ -19,18 +19,23 @@ syn keyword javaScriptTodo TODO DEBUG XXX contained
 syn region javaScriptString
     \ start=/\z(['"`]\)/ end=/\z1/ skip=/\\\\\|\\\z1/
     \ contains=CONTAINED
-syn match javaScriptFunction
+syn match javaScriptArrow /=>/
+syn match javaScriptArrowFunction
     \ /\(^\|;\)\s*\(\(export\|default\)\s\+\)*\(\(var\|let\|const\)\s\+\)\zs\w\+\ze\s\+=\s\+\(\w\+\|(\(\w\+\(\s\+=\s\+.*\)\?\(,\s\+\)\?\)*)\|({\_[^}]*})\)\s\+=>/
 syn match javaScriptFunction  /\(^\|;\)\s*\(\(export\|default\)\s\+\)*function\s\+\zs\w\+/
 syn match javaScriptClass /^\s*\(\(export\|default\)\s\+\)*class\s\+\zs\w\+/
 " XXX: This could be buggy
 syn match javaScriptMethod
     \ /^\s\+\(static\s\+\)\?\zs\w\+\(if\|return\|while\|for\|switch\)\@<!\ze\(\s*(.*)\s*{\)/
+syntax match javaScriptParen /[][(){}]/
 
 
 hi def link javaScriptComment Comment
 hi def link javaScriptTodo Todo
 hi def link javaScriptString String
 hi def link javaScriptFunction Function
+hi def link javaScriptArrowFunction Function
+hi javaScriptArrow ctermfg=10
 hi def link javaScriptClass Class
 hi def link javaScriptMethod Function
+hi javaScriptParen ctermfg=15
