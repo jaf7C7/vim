@@ -22,10 +22,15 @@ syn region pythonString
     \ start=/[frbu]\?\z(['"]\{3}\)/ end=/\z1/ skip=/\\\\\|\\\z1/
     \ contains=CONTAINED
 syn match pythonClass /\(^\|;\)\s*class\s\+\zs\h\w\+/
-syn match pythonFunction /\(^\|;\)\s*def\s\+\zs\h\w\+/
+syn match pythonFunction /\(^\|;\)\s*\(async\s\+\)\?\s*def\s\+\zs\h\w\+/
+syn match pythonParen /[][(){}]/
+syn match pythonDecorator /\(^\|;\)\s*\zs@\ze\w\+/
 
 hi def link pythonComment Comment
 hi def link pythonTodo Todo
-hi def link pythonString String
+hi def link pythonSingleQuoteString String
+hi def link pythonDoubleQuoteString String
 hi def link pythonClass Class
 hi def link pythonFunction Function
+hi pythonParen ctermfg=15
+hi pythonDecorator ctermfg=10
