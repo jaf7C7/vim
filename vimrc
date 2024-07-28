@@ -2,7 +2,7 @@ set nohlsearch
 set noincsearch
 set colorcolumn=81
 set hidden
-set rulerformat=%40(%{&ft}\ \ %{&et==1?'spaces:'.&sw:'tabs:'.&ts}\ \ %{&ff}\ \ %{&fenc}%=%l,%v%)
+set statusline=%f\ %M\ %R%=%{&ft}\ \ %{&et==1?'spaces:'.&sw:'tabs:'.&ts}\ \ %{&ff}\ \ %{&fenc}%=%l,%v
 set noshowmode
 set fo+=j  " Remove comment leader when joining lines
 packadd comment  " Comment text with `gc{motion}` or `gcc`.
