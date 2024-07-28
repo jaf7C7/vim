@@ -4,6 +4,7 @@ set colorcolumn=81
 set hidden
 set statusline=%f\ %M\ %R%=%{&ft}\ \ %{&et==1?'spaces:'.&sw:'tabs:'.&ts}\ \ %{&ff}\ \ %{&fenc}%=%l,%v
 set noshowmode
+set scrolloff=1
 set mouse=n
 set fo+=j  " Remove comment leader when joining lines
 packadd comment  " Comment text with `gc{motion}` or `gcc`.
