@@ -74,12 +74,12 @@ call plug#end()
 
 if exists('$TERMINAL_THEME')
     let &bg = $TERMINAL_THEME =~ 'light' ? 'light' : 'dark'
+endif
 
-    if $TERMINAL_THEME =~ 'solarized'
-        colorscheme solarized
-    elseif $TERMINAL_THEME =~ 'gruvbox'
-        colorscheme gruvbox
-    endif
+if $TERMINAL_THEME =~ 'solarized'
+    colorscheme solarized
+elseif $TERMINAL_THEME =~ 'gruvbox'
+    colorscheme gruvbox
 else
     set cc=
     colorscheme mono
