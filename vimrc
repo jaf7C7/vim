@@ -5,7 +5,6 @@ set hidden
 set statusline=%f\ %M\ %R%=%{&ft}\ \ %{&et==1?'spaces:'.&sw:'tabs:'.&ts}\ \ %{&ff}\ \ %{&fenc}%=%l,%v
 set noshowmode
 set scrolloff=1
-set mouse=n
 set fo+=j  " Remove comment leader when joining lines
 packadd comment  " Comment text with `gc{motion}` or `gcc`.
 packadd matchit  " Improve `%` behaviour.
@@ -15,6 +14,11 @@ set tabstop=8  " A tab char still displays as 8 cells.
 set shiftwidth=4
 set softtabstop=-1  " <Tab> inserts 'shiftwidth' spaces.
 set expandtab
+
+" Disable mousewheel/touchpad scrolling in vim
+" https://www.invisible-island.net/xterm/ctlseqs/ctlseqs.html
+let &t_ti = "\e[?1007l" . &t_ti
+let &t_te = &t_te . "\e[?1007h"
 
 " Make Ctrl-Backspace delete previous word.
 " 't_kb' is the sequence sent by the terminal's backspace key.
