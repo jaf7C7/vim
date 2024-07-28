@@ -75,14 +75,15 @@ function! SynStack()
 endfunc
 nnoremap gs :call SynStack()<CR>
 
-if !exists('$TERMINAL_THEME')
-    let $TERMINAL_THEME = 'solarized-dark'
-endif
+if exists('$TERMINAL_THEME')
+    let &bg = $TERMINAL_THEME =~ 'light' ? 'light' : 'dark'
 
-let &bg = $TERMINAL_THEME =~ 'light' ? 'light' : 'dark'
-
-if $TERMINAL_THEME =~ 'solarized'
-    colorscheme solarized
-elseif $TERMINAL_THEME =~ 'gruvbox'
-    colorscheme gruvbox
+    if $TERMINAL_THEME =~ 'solarized'
+        colorscheme solarized
+    elseif $TERMINAL_THEME =~ 'gruvbox'
+        colorscheme gruvbox
+    endif
+else
+    set cc=
+    colorscheme mono
 endif
