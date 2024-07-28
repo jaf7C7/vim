@@ -20,10 +20,12 @@ let &t_ti = "\e[?1007l" . &t_ti
 let &t_te = &t_te . "\e[?1007h"
 
 " Make Ctrl-Backspace delete previous word.
-if &t_kb != ''
-    noremap!  
+" 't_kb' is the sequence sent by the terminal's backspace key.
+" '\010' is Ctrl-H in octal.
+if &t_kb == '\010'
+    noremap! <C-?> <C-w>
 else
-    noremap!  
+    noremap! <C-h> <C-w>
 endif
 
 " Auto-fill new html files with boilerplate.
