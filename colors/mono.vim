@@ -84,7 +84,6 @@ hi ColorColumn cterm=reverse
 hi Search cterm=reverse
 hi IncSearch cterm=reverse,bold,underline
 hi MatchParen cterm=underline
-hi MatchParen ctermbg=8
 hi MoreMsg cterm=reverse
 hi ErrorMsg cterm=reverse
 hi Pmenu cterm=reverse
