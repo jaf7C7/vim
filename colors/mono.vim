@@ -88,6 +88,7 @@ hi MatchParen ctermbg=8
 hi MoreMsg cterm=reverse
 hi ErrorMsg cterm=reverse
 hi Pmenu cterm=reverse
+hi Visual cterm=reverse
 hi SpecialKey cterm=reverse
 hi StatusLine cterm=reverse
 hi StatusLineNC cterm=reverse
