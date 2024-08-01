@@ -5,17 +5,13 @@ set hidden
 set statusline=%f\ %M\ %R%=%{&ft}\ \ %{&et==1?'spaces:'.&sw:'tabs:'.&ts}\ \ %{&ff}\ \ %{&fenc}%=%l,%v
 set noshowmode
 set scrolloff=1
+set autoindent
+set shiftwidth=0   " 'shiftwidth' follows 'tabstop'
 set cpoptions+=n   " Wrapped lines use number column (can select long lines)
 set numberwidth=8  " 8-char number margin like `vi`.
 set fo+=j          " Remove comment leader when joining lines
-packadd comment    " Comment text with `gc{motion}` or `gcc`.
-packadd matchit    " Improve `%` behaviour.
-
-set autoindent
-set tabstop=8      " A tab char still displays as 8 cells.
-set shiftwidth=4
-set softtabstop=-1 " <Tab> inserts 'shiftwidth' spaces.
-set expandtab
+packadd comment	   " Comment text with `gc{motion}` or `gcc`.
+packadd matchit	   " Improve `%` behaviour.
 
 " Disable mousewheel/touchpad scrolling in vim
 " https://www.invisible-island.net/xterm/ctlseqs/ctlseqs.html
