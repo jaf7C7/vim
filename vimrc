@@ -22,14 +22,14 @@ let &t_te = &t_te . "\e[?1007h"
 " 't_kb' is the sequence sent by the terminal's backspace key.
 " '\010' is Ctrl-H in octal.
 if &t_kb == '\010'
-    noremap! <C-?> <C-w>
+	noremap! <C-?> <C-w>
 else
-    noremap! <C-h> <C-w>
+	noremap! <C-h> <C-w>
 endif
 
 " Auto-fill new html files with boilerplate.
 if filereadable(expand('~/Templates/boilerplate.html'))
-    autocmd BufNewFile *.html 0r ~/Templates/boilerplate.html
+	autocmd BufNewFile *.html 0r ~/Templates/boilerplate.html
 endif
 
 " Mark trailing whitespace as an error when not in insert mode.
@@ -50,39 +50,39 @@ call plug#end()
 " Enable automatic bracketed paste (no more `:set paste`)
 " https://stackoverflow.com/questions/5585129/pasting-code-into-terminal-window-into-vim-on-mac-os-x
 " if &term =~ "xterm.*"
-"     let &t_ti = &t_ti . "\e[?2004h"
-"     let &t_te = "\e[?2004l" . &t_te
-"     function! XTermPasteBegin(ret)
-"         set pastetoggle=<Esc>[201~
-"         set paste
-"         return a:ret
-"     endfunction
-"     map <expr> <Esc>[200~ XTermPasteBegin("i")
-"     imap <expr> <Esc>[200~ XTermPasteBegin("")
-"     vmap <expr> <Esc>[200~ XTermPasteBegin("c")
-"     cmap <Esc>[200~ <nop>
-"     cmap <Esc>[201~ <nop>
+"	  let &t_ti = &t_ti . "\e[?2004h"
+"	  let &t_te = "\e[?2004l" . &t_te
+"	  function! XTermPasteBegin(ret)
+"		  set pastetoggle=<Esc>[201~
+"		  set paste
+"		  return a:ret
+"	  endfunction
+"	  map <expr> <Esc>[200~ XTermPasteBegin("i")
+"	  imap <expr> <Esc>[200~ XTermPasteBegin("")
+"	  vmap <expr> <Esc>[200~ XTermPasteBegin("c")
+"	  cmap <Esc>[200~ <nop>
+"	  cmap <Esc>[201~ <nop>
 " endif
 
 " Check syntax item under cursor with `gs`
 " https://stackoverflow.com/questions/9464844/how-to-get-group-name-of-highlighting-under-cursor-in-vim
 " function! SynStack()
-"     if !exists("*synstack")
-"         return
-"     endif
-"     echo map(synstack(line('.'), col('.')), 'synIDattr(v:val, "name")')
+"	  if !exists("*synstack")
+"		  return
+"	  endif
+"	  echo map(synstack(line('.'), col('.')), 'synIDattr(v:val, "name")')
 " endfunc
 " nnoremap gs :call SynStack()<CR>
 
 if exists('$TERMINAL_THEME')
-    let &bg = $TERMINAL_THEME =~ 'light' ? 'light' : 'dark'
+	let &bg = $TERMINAL_THEME =~ 'light' ? 'light' : 'dark'
 endif
 
 if $TERMINAL_THEME =~ 'solarized'
-    colorscheme solarized
+	colorscheme solarized
 elseif $TERMINAL_THEME =~ 'gruvbox'
-    colorscheme gruvbox
+	colorscheme gruvbox
 else
-    set cc=
-    colorscheme mono
+	set cc=
+	colorscheme mono
 endif
