@@ -9,7 +9,7 @@ set autoindent
 set shiftwidth=0   " 'shiftwidth' follows 'tabstop'
 set cpoptions+=n   " Wrapped lines use number column (can select long lines)
 set numberwidth=8  " 8-char number margin like `vi`.
-set fo+=j          " Remove comment leader when joining lines
+set formatoptions+=j      " Remove comment leader when joining lines
 packadd comment	   " Comment text with `gc{motion}` or `gcc`.
 packadd matchit	   " Improve `%` behaviour.
 
