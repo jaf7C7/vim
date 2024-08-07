@@ -27,10 +27,8 @@ else
 	noremap! <C-h> <C-w>
 endif
 
-" Auto-fill new html files with boilerplate.
-if filereadable(expand('~/Templates/boilerplate.html'))
-	autocmd BufNewFile *.html 0r ~/Templates/boilerplate.html
-endif
+" Indentation by filetype
+autocmd FileType html setlocal ts=2
 
 " Mark trailing whitespace as an error when not in insert mode.
 " https://vim.fandom.com/wiki/Highlight_unwanted_spaces
