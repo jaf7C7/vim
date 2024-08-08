@@ -84,19 +84,21 @@ hi MoreMsg cterm=reverse
 hi ErrorMsg cterm=reverse
 hi PMenuSel cterm=reverse
 hi Visual cterm=reverse
-hi SpecialKey cterm=reverse
 hi StatusLine cterm=reverse
 hi StatusLineNC cterm=reverse
 hi Todo ctermfg=1 ctermbg=none cterm=bold
+hi SpecialKey ctermfg=1 ctermbg=none cterm=bold
 
 if &bg == 'light'
 	hi ColorColumn ctermbg=255
 	hi Error ctermbg=255
 	hi PMenu ctermfg=8 ctermbg=255
+	hi SpecialKey ctermbg=255
 elseif &bg == 'dark'
 	hi ColorColumn ctermbg=233
 	hi Error ctermbg=233
 	hi PMenu ctermfg=7 ctermbg=233
+	hi SpecialKey ctermbg=233
 endif
 
 hi Statement ctermfg=21
