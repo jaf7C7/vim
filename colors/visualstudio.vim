@@ -82,39 +82,27 @@ hi IncSearch cterm=reverse,bold,underline
 hi MatchParen cterm=underline
 hi MoreMsg cterm=reverse
 hi ErrorMsg cterm=reverse
-hi Pmenu cterm=reverse
+hi PMenuSel cterm=reverse
 hi Visual cterm=reverse
 hi SpecialKey cterm=reverse
 hi StatusLine cterm=reverse
 hi StatusLineNC cterm=reverse
 hi Todo ctermfg=1 ctermbg=none cterm=bold
-hi Error cterm=underline ctermfg=1
 
-if &t_Co == 256
-	if &bg == 'light'
-		hi ColorColumn ctermbg=255
-	elseif &bg == 'dark'
-		hi ColorColumn ctermbg=233
-	endif
-
-	hi Statement ctermfg=21
-	hi Comment ctermfg=28
-	hi Number ctermfg=28
-	hi String ctermfg=124
-elseif &t_Co >= 8
-	if &bg == 'light'
-		hi ColorColumn ctermbg=7
-	elseif &bg == 'dark'
-		hi ColorColumn ctermbg=8
-	endif
-
-	hi Statement ctermfg=4
-	hi Comment ctermfg=2
-	hi Number ctermfg=2
-	hi String ctermfg=1
+if &bg == 'light'
+	hi ColorColumn ctermbg=255
+	hi Error ctermbg=255
+	hi PMenu ctermfg=8 ctermbg=255
+elseif &bg == 'dark'
+	hi ColorColumn ctermbg=233
+	hi Error ctermbg=233
+	hi PMenu ctermfg=7 ctermbg=233
 endif
 
-hi! def link Keyword Statement
+hi Statement ctermfg=21
+hi Comment ctermfg=28
+hi Number ctermfg=28
+hi String ctermfg=124
 
 hi! def link javaScriptFunction Statement
 hi! def link javaScriptBraces None
