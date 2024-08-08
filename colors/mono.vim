@@ -91,5 +91,6 @@ hi Visual cterm=reverse
 hi SpecialKey cterm=reverse
 hi StatusLine cterm=reverse
 hi StatusLineNC cterm=reverse
+hi VertSplit cterm=reverse
 hi Todo cterm=reverse
 hi Error cterm=underline
