@@ -80,8 +80,8 @@ hi clear Todo
 hi Search cterm=reverse
 hi IncSearch cterm=reverse,bold,underline
 hi MatchParen cterm=underline
-hi MoreMsg cterm=reverse
-hi ErrorMsg cterm=reverse
+hi MoreMsg ctermfg=21
+hi ErrorMsg ctermfg=1
 hi PMenuSel cterm=reverse
 hi Visual cterm=reverse
 hi StatusLine cterm=reverse
