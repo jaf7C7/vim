@@ -17,7 +17,7 @@ packadd! trailingspace  " Highlight trailing whitespace as an error.
 packadd! synstack  " Get syntax group under cursor with `gs`.
 packadd! ctrlbackspace  " Make Ctrl-Backspace delete the previous word.
 packadd! noscroll  " Disable terminal scrolling when in vim.
-packadd! autoformat  " Format on save with 'formatprg' (if set).
+"packadd! autoformat  " Format on save with 'formatprg' (if set).
 
 if $TERMINAL_THEME =~ 'solarized'
 	let &bg = $TERMINAL_THEME =~ 'light' ? 'light' : 'dark'
