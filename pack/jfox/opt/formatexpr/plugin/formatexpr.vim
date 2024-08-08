@@ -4,7 +4,7 @@ function! FormatBuffer()
 	call setpos('.', cursor_position)
 	unlet cursor_position
 	if v:shell_error > 0
-		echo 'Could not format with "' . &formatprg . '"'
+		echo 'Could not format'
 		undo
 	endif
 endfunction
