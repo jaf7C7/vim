@@ -1,6 +1,8 @@
 set autoindent
-set cpoptions+=n  " Wrapped lines use number column
+set textwidth=80
+set cpoptions+=n  " Wrapped lines use number column.
 set formatoptions+=j  " Remove comment leader when joining lines.
+set formatoptions+=a  " Always reformat paragraphs after each edit.
 set hidden
 set nohlsearch
 set noincsearch
