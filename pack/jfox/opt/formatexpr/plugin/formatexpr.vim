@@ -8,5 +8,3 @@ function! FormatBuffer()
 		undo
 	endif
 endfunction
-
-set formatexpr=FormatBuffer()
