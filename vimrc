@@ -1,8 +1,8 @@
 set autoindent
-set textwidth=80
+set backspace=""
+set colorcolumn=81
 set cpoptions+=n  " Wrapped lines use number column.
 set formatoptions+=j  " Remove comment leader when joining lines.
-set formatoptions+=a  " Always reformat paragraphs after each edit.
 set hidden
 set nohlsearch
 set noincsearch
@@ -10,7 +10,8 @@ set noruler
 set noshowmode
 set scrolloff=1
 set shiftwidth=0  " 'shiftwidth' follows 'tabstop'
-set statusline=%f\ %M\ %R%=%{&ft}\ \ %{&et==1?'spaces:'.&sw:'tabs:'.&ts}\ \ %{&ff}\ \ %{&fenc}%=%l,%v
+set textwidth=79
+set undolevels=0  " Golf mode.
 
 packadd! comment  " Comment text with `gc{motion}` or `gcc`.
 packadd! matchit  " Improve `%` behaviour.
