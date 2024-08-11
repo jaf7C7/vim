@@ -14,13 +14,13 @@ set textwidth=79
 set undolevels=0  " Golf mode.
 
 packadd! comment  " Comment text with `gc{motion}` or `gcc`.
-packadd! matchit  " Improve `%` behaviour.
-packadd! editorconfig  " See: https://editorconfig.org/
-packadd! trailingspace  " Highlight trailing whitespace as an error.
-packadd! synstack  " Get syntax group under cursor with `gs`.
 packadd! ctrlbackspace  " Make Ctrl-Backspace delete the previous word.
-packadd! noscroll  " Disable terminal scrolling when in vim.
+packadd! editorconfig  " See: https://editorconfig.org/
 packadd! formatexpr  " Save and restore cursor position when formatting with `gq`
+packadd! matchit  " Improve `%` behaviour.
+"packadd! noscroll  " Stop mouse scrolling moving the cursor.
+packadd! synstack  " Get syntax group under cursor with `gs`.
+packadd! trailingspace  " Highlight trailing whitespace as an error.
 
 if $TERMINAL_THEME =~ 'solarized'
 	let &bg = $TERMINAL_THEME =~ 'light' ? 'light' : 'dark'
