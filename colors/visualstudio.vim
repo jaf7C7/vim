@@ -1,5 +1,5 @@
 hi clear
-let g:colors_name = 'vscode'
+let g:colors_name = 'visualstudio'
 
 hi clear SpecialKey
 hi clear EndOfBuffer
@@ -77,43 +77,36 @@ hi clear Removed
 hi clear Error
 hi clear Todo
 
-hi Search cterm=reverse
+hi Added ctermfg=2 ctermbg=255
+hi ColorColumn ctermbg=255
+hi CursorLineNr ctermfg=1 cterm=bold
+hi DiffAdd ctermbg=2
+hi DiffChange ctermbg=255
+hi DiffDelete ctermbg=1
+hi DiffText cterm=bold ctermbg=1 ctermfg=0
+hi Error ctermbg=255
+hi ErrorMsg ctermfg=1
 hi IncSearch cterm=reverse,bold,underline
+hi LineNr ctermfg=24
 hi MatchParen cterm=underline
 hi MoreMsg ctermfg=21
-hi ErrorMsg ctermfg=1
+hi PMenu ctermfg=8 ctermbg=255
 hi PMenuSel cterm=reverse
-hi Visual cterm=reverse
+hi Removed ctermfg=1 ctermbg=255
+hi Search cterm=reverse
+hi SpecialKey ctermfg=1 ctermbg=none cterm=bold
 hi StatusLine cterm=reverse
 hi StatusLineNC cterm=reverse
 hi Todo ctermfg=1 ctermbg=none cterm=bold
-hi SpecialKey ctermfg=1 ctermbg=none cterm=bold
-hi Added ctermfg=2
-hi Removed ctermfg=1
-
-if &bg == 'light'
-	hi ColorColumn ctermbg=255
-	hi Error ctermbg=255
-	hi PMenu ctermfg=8 ctermbg=255
-	hi SpecialKey ctermbg=255
-	hi Added ctermbg=255
-	hi Removed ctermbg=255
-elseif &bg == 'dark'
-	hi ColorColumn ctermbg=233
-	hi Error ctermbg=233
-	hi PMenu ctermfg=7 ctermbg=233
-	hi SpecialKey ctermbg=233
-	hi Added ctermbg=233
-	hi Removed ctermbg=233
-endif
+hi Visual cterm=reverse
 
 hi Statement ctermfg=21
 hi Comment ctermfg=28
-hi Number ctermfg=28
-hi String ctermfg=124
+hi Constant ctermfg=124
 
 hi! def link javaScriptFunction Statement
 hi! def link javaScriptBraces None
 hi! def link javaScriptBoolean Keyword
+hi! def link javaScriptType Keyword
 
 hi! def link pythonInclude Keyword
