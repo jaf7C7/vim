@@ -81,6 +81,8 @@ hi clear Error
 hi clear Todo
 
 hi ColorColumn cterm=reverse
+hi Comment cterm=italic,bold
+hi String cterm=italic
 hi Search cterm=reverse
 hi IncSearch cterm=reverse,bold,underline
 hi MatchParen cterm=underline
@@ -94,3 +96,5 @@ hi StatusLineNC cterm=reverse
 hi VertSplit cterm=reverse
 hi Todo cterm=reverse
 hi Error cterm=underline
+syn region pythonDocString start=/"""/ end=/"""/
+hi def link pythonDocString Comment
