@@ -7,6 +7,7 @@ set hidden
 set nohlsearch
 set noincsearch
 set noruler
+set cursorline
 set noshowmode
 set scrolloff=1
 set shiftwidth=0  " 'shiftwidth' follows 'tabstop'
