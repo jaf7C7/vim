@@ -11,7 +11,7 @@ set cursorline
 set noshowmode
 set scrolloff=1
 set shiftwidth=0  " 'shiftwidth' follows 'tabstop'
-set textwidth=79
+"set textwidth=79
 set undolevels=0  " Golf mode.
 
 packadd! comment  " Comment text with `gc{motion}` or `gcc`.
