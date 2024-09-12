@@ -27,6 +27,8 @@ packadd! solarized8
 if $TERMINAL_THEME =~ 'solarized'
 	let &bg = $TERMINAL_THEME =~ 'light' ? 'light' : 'dark'
 	colorscheme solarized
-else
+elseif &bg =~ 'light'
 	colorscheme visualstudio
+else
+	colorscheme default
 endif
