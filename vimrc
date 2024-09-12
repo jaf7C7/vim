@@ -22,6 +22,7 @@ packadd! matchit  " Improve `%` behaviour.
 "packadd! noscroll  " Stop mouse scrolling moving the cursor.
 packadd! synstack  " Get syntax group under cursor with `gs`.
 packadd! trailingspace  " Highlight trailing whitespace as an error.
+packadd! solarized8
 
 if $TERMINAL_THEME =~ 'solarized'
 	let &bg = $TERMINAL_THEME =~ 'light' ? 'light' : 'dark'
