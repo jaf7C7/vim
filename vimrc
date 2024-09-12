@@ -1,5 +1,6 @@
 set autoindent
 set backspace=""
+set backupdir=~/.config/vim/backups,.
 "set colorcolumn=81
 set cpoptions+=n  " Wrapped lines use number column.
 set formatoptions+=j  " Remove comment leader when joining lines.
