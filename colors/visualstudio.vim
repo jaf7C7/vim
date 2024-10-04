@@ -95,10 +95,11 @@ hi PMenuSel cterm=reverse
 hi Removed ctermfg=1 ctermbg=255
 hi Search cterm=reverse
 hi SpecialKey ctermfg=1 ctermbg=none cterm=bold
-hi StatusLine cterm=reverse
-hi StatusLineNC cterm=reverse
+hi StatusLine cterm=italic ctermbg=255
+hi! def link StatusLineNC StatusLine
 hi Todo ctermfg=1 ctermbg=none cterm=bold
 hi Visual cterm=reverse
+hi WildMenu cterm=bold,italic ctermfg=1
 
 hi Statement ctermfg=21
 hi Comment ctermfg=28
