@@ -90,8 +90,8 @@ hi IncSearch cterm=reverse,bold,underline
 hi LineNr ctermfg=24
 hi MatchParen cterm=underline
 hi MoreMsg ctermfg=21
-hi PMenu ctermfg=8 ctermbg=255
-hi PMenuSel cterm=reverse
+hi PMenu cterm=italic ctermbg=255
+hi PMenuSel cterm=bold,italic ctermfg=1
 hi Removed ctermfg=1 ctermbg=255
 hi Search cterm=reverse
 hi SpecialKey ctermfg=1 ctermbg=none cterm=bold
