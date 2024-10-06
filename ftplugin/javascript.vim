@@ -3,3 +3,5 @@ function! FormatCmd(start_line, end_line)
 endfunction
 
 set formatexpr=FormatBuffer()
+
+nnoremap @e :.!emmet<CR>
