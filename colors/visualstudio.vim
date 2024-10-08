@@ -98,7 +98,7 @@ hi SpecialKey ctermfg=1 ctermbg=none cterm=bold
 hi StatusLine cterm=italic ctermbg=255
 hi! def link StatusLineNC StatusLine
 hi Todo ctermfg=1 ctermbg=none cterm=bold
-hi Visual cterm=reverse
+hi Visual ctermfg=15 ctermbg=0
 hi WildMenu cterm=bold,italic ctermfg=1
 
 hi Statement ctermfg=21
