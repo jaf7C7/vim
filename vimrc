@@ -11,6 +11,5 @@ set noshowmode
 set scrolloff=1
 set shiftwidth=0  " 'shiftwidth' follows 'tabstop'
 set undolevels=0  " Golf mode.
-set mouse=a  " Capture all mouse events
 
-colorscheme visualstudio
+colorscheme jfox

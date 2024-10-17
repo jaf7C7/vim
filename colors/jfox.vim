@@ -1,8 +1,5 @@
-" Name:         Mono
-" Description:  Like 'quiet', but quieter.
-
 hi clear
-let g:colors_name = 'mono'
+let g:colors_name = 'jfox'
 
 hi clear SpecialKey
 hi clear EndOfBuffer
@@ -80,21 +77,27 @@ hi clear Removed
 hi clear Error
 hi clear Todo
 
-hi ColorColumn cterm=reverse
-hi Comment cterm=italic,bold
-hi String cterm=italic
-hi Search cterm=reverse
-hi IncSearch cterm=reverse,bold,underline
-hi MatchParen cterm=underline
-hi MoreMsg cterm=reverse
-hi ErrorMsg cterm=reverse
-hi Pmenu cterm=reverse
-hi Visual cterm=reverse
-hi SpecialKey cterm=reverse
-hi StatusLine cterm=reverse
-hi StatusLineNC cterm=reverse
-hi VertSplit cterm=reverse
-hi Todo cterm=reverse
+hi ColorColumn ctermfg=255
+hi Comment ctermfg=12 cterm=italic
 hi Error cterm=underline
+hi ErrorMsg ctermfg=9 cterm=bold
+hi IncSearch cterm=reverse,bold,underline
+hi MatchParen ctermfg=9 cterm=bold
+hi MoreMsg cterm=reverse
+hi Pmenu ctermbg=255 cterm=italic
+hi! def link PMenuSel WildMenu
+hi Search cterm=reverse
+hi! def link SpecialKey WildMenu
+hi StatusLine ctermbg=255 cterm=italic
+hi! def link StatusLineNC StatusLine
+hi VertSplit ctermbg=255
+hi Visual cterm=reverse
+hi WildMenu ctermbg=255 cterm=bold,italic ctermfg=9
+
+hi Statement cterm=bold ctermfg=4
+hi Constant ctermfg=2
+hi String cterm=italic ctermfg=6
+hi Todo cterm=bold ctermfg=9
+
 syn region pythonDocString start=/"""/ end=/"""/
 hi def link pythonDocString Comment
