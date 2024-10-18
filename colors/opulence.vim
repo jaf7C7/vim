@@ -81,7 +81,7 @@ hi ColorColumn ctermfg=255
 hi Comment ctermfg=12 cterm=italic
 hi ErrorMsg ctermfg=9 cterm=bold
 hi IncSearch cterm=reverse,bold,underline
-hi LineNr ctermfg=7
+hi LineNr ctermfg=250
 hi CursorLineNr ctermfg=9 cterm=bold
 hi MatchParen ctermfg=9 cterm=bold
 hi MoreMsg cterm=reverse
