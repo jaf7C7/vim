@@ -13,6 +13,9 @@ set shiftwidth=0  " 'shiftwidth' follows 'tabstop'
 set undolevels=0  " Golf mode.
 set mouse=nv  " Use mouse in normal and visual modes
 
+packadd! editorconfig  " Read .editorconfig files
+packadd! comment  " Comment code with `gc{motion}`
+
 colorscheme jfox
 
 " Make Ctrl-Backspace delete the previous word.
