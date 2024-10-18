@@ -11,6 +11,7 @@ set noshowmode
 set scrolloff=1
 set shiftwidth=0  " 'shiftwidth' follows 'tabstop'
 set undolevels=0  " Golf mode.
+set mouse=nv  " Use mouse in normal and visual modes
 
 colorscheme jfox
 
