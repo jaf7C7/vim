@@ -1,5 +1,4 @@
 set autoindent
-set backspace=""
 set backupdir=~/.config/vim/backups,.
 set cursorline
 set formatoptions+=j  " Remove comment leader when joining lines.
@@ -10,8 +9,7 @@ set noruler
 set noshowmode
 set scrolloff=1
 set shiftwidth=0  " 'shiftwidth' follows 'tabstop'.
-set undolevels=0  " Golf mode.
-set mouse=nv  " Use mouse in normal and visual modes.
+set mouse=nvi  " Use the mouse except in command-mode.
 
 filetype plugin indent on
 
