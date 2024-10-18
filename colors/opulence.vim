@@ -100,6 +100,3 @@ hi Constant ctermfg=2
 hi String cterm=italic ctermfg=6
 hi Todo cterm=bold ctermfg=9
 hi Error ctermbg=255
-
-syn region pythonDocString start=/"""/ end=/"""/
-hi def link pythonDocString Comment
