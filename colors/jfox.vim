@@ -90,7 +90,7 @@ hi! def link SpecialKey WildMenu
 hi StatusLine ctermbg=255 cterm=italic
 hi! def link StatusLineNC StatusLine
 hi VertSplit ctermbg=255
-hi Visual cterm=reverse
+hi Visual ctermfg=15 ctermbg=12
 hi WildMenu ctermbg=255 cterm=bold,italic ctermfg=9
 
 hi Statement cterm=bold ctermfg=4
