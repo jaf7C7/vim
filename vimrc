@@ -18,6 +18,17 @@ packadd! comment  " Comment code with `gc{motion}`
 
 colorscheme jfox
 
+" Change cursor shape in insert mode
+"   0  -> blinking block.
+"   1  -> blinking block (default).
+"   2  -> steady block.
+"   3  -> blinking underline.
+"   4  -> steady underline.
+"   5  -> blinking bar (xterm).
+"   6  -> steady bar (xterm).
+let &t_SI = "\e[5 q"
+let &t_EI = "\e[1 q"
+
 " Make Ctrl-Backspace delete the previous word.
 inoremap <C-H> <C-W>
 cnoremap <C-H> <C-W>
