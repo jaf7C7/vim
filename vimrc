@@ -3,20 +3,21 @@ set backupdir=~/.config/vim/backups,.
 set cursorline
 set formatoptions+=j  " Remove comment leader when joining lines.
 set hidden
+set mouse=nvi  " Use the mouse except in command-mode.
 set nohlsearch
 set noincsearch
 set noruler
 set noshowmode
 set scrolloff=1
 set shiftwidth=0  " 'shiftwidth' follows 'tabstop'.
-set mouse=nvi  " Use the mouse except in command-mode.
+set statusline=%f\ %r%m%=%y
 
 filetype plugin indent on
 
+colorscheme opulence
+
 packadd! editorconfig  " Read .editorconfig files.
 packadd! comment  " Comment code with `gc{motion}`.
-
-colorscheme jfox
 
 " Make Ctrl-Backspace delete the previous word.
 inoremap <C-H> <C-W>
