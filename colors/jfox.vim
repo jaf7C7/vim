@@ -79,7 +79,6 @@ hi clear Todo
 
 hi ColorColumn ctermfg=255
 hi Comment ctermfg=12 cterm=italic
-hi Error cterm=underline
 hi ErrorMsg ctermfg=9 cterm=bold
 hi IncSearch cterm=reverse,bold,underline
 hi MatchParen ctermfg=9 cterm=bold
@@ -98,6 +97,7 @@ hi Statement cterm=bold ctermfg=4
 hi Constant ctermfg=2
 hi String cterm=italic ctermfg=6
 hi Todo cterm=bold ctermfg=9
+hi Error ctermbg=255
 
 syn region pythonDocString start=/"""/ end=/"""/
 hi def link pythonDocString Comment
