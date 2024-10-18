@@ -81,6 +81,8 @@ hi ColorColumn ctermfg=255
 hi Comment ctermfg=12 cterm=italic
 hi ErrorMsg ctermfg=9 cterm=bold
 hi IncSearch cterm=reverse,bold,underline
+hi LineNr ctermfg=7
+hi CursorLineNr ctermfg=9 cterm=bold
 hi MatchParen ctermfg=9 cterm=bold
 hi MoreMsg cterm=reverse
 hi Pmenu ctermbg=255 cterm=italic
@@ -89,7 +91,7 @@ hi Search cterm=reverse
 hi! def link SpecialKey WildMenu
 hi StatusLine ctermbg=255 cterm=italic
 hi! def link StatusLineNC StatusLine
-hi VertSplit ctermbg=255
+hi VertSplit ctermbg=255 ctermfg=255
 hi Visual ctermfg=15 ctermbg=12
 hi WildMenu ctermbg=255 cterm=bold,italic ctermfg=9
 
