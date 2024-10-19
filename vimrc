@@ -25,11 +25,14 @@ cnoremap <C-H> <C-W>
 
 " Disable mousewheel/touchpad scrolling.
 " https://www.invisible-island.net/xterm/ctlseqs/ctlseqs.html
+" TODO: Sourcing this twice will keep adding unnecessary characters to the
+" strings.  Protect these variables from re-sourcing.
 let &t_ti = "\e[?1007l" . &t_ti
 let &t_te = &t_te . "\e[?1007h"
 
 " Change cursor shape in insert mode.
 " https://www.invisible-island.net/xterm/ctlseqs/ctlseqs.html
+" TODO: see above...
 let &t_SI = "\e[5 q"
 let &t_EI = "\e[1 q"
 
