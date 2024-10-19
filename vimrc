@@ -35,6 +35,7 @@ let &t_te = &t_te . "\e[?1007h"
 " TODO: see above...
 let &t_SI = "\e[5 q"
 let &t_EI = "\e[1 q"
+let &t_ti =  &t_ti . "\e[1 q"
 
 " Highlight trailing whitespace.
 " https://vim.fandom.com/wiki/Highlight_unwanted_spaces
