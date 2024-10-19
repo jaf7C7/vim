@@ -77,7 +77,7 @@ hi clear Removed
 hi clear Error
 hi clear Todo
 
-hi ColorColumn ctermfg=255
+hi ColorColumn ctermbg=255
 hi Comment ctermfg=12 cterm=italic
 hi ErrorMsg ctermfg=9 cterm=bold
 hi IncSearch cterm=reverse,bold,underline
