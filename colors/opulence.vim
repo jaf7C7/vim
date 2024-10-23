@@ -84,9 +84,11 @@ hi IncSearch cterm=reverse,bold,underline
 hi LineNr ctermfg=250
 hi CursorLineNr ctermfg=9 cterm=bold
 hi MatchParen ctermfg=9 cterm=bold
-hi MoreMsg cterm=reverse
+hi! def link MoreMsg Question
+hi! def link ModeMsg LineNr
 hi Pmenu ctermbg=255 cterm=italic
 hi! def link PMenuSel WildMenu
+hi Question cterm=bold,italic ctermfg=2
 hi Search cterm=reverse
 hi! def link SpecialKey WildMenu
 hi StatusLine ctermbg=255 cterm=italic
@@ -94,6 +96,7 @@ hi! def link StatusLineNC StatusLine
 hi VertSplit ctermbg=255 ctermfg=255
 hi Visual ctermfg=15 ctermbg=12
 hi WildMenu ctermbg=255 cterm=bold,italic ctermfg=9
+hi WarningMsg cterm=bold,italic ctermfg=3
 
 hi Statement cterm=bold ctermfg=4
 hi Constant ctermfg=2
