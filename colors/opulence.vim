@@ -87,6 +87,8 @@ hi MatchParen ctermfg=9 cterm=bold
 hi! def link MoreMsg Question
 hi! def link ModeMsg LineNr
 hi Pmenu ctermbg=255 cterm=italic
+hi PmenuThumb ctermbg=254
+hi PmenuSBar ctermbg=255
 hi! def link PMenuSel WildMenu
 hi Question cterm=bold ctermfg=2
 hi Search cterm=reverse
@@ -95,7 +97,7 @@ hi StatusLine ctermbg=255 cterm=italic
 hi! def link StatusLineNC StatusLine
 hi VertSplit ctermbg=255 ctermfg=255
 hi Visual ctermfg=15 ctermbg=12
-hi WildMenu ctermbg=255 cterm=bold,italic ctermfg=9
+hi WildMenu ctermbg=254 cterm=bold,italic ctermfg=9
 hi WarningMsg cterm=bold ctermfg=3
 
 hi Statement cterm=bold ctermfg=4
