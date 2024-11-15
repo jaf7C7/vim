@@ -103,5 +103,5 @@ hi Comment cterm=italic ctermfg=245
 hi Constant ctermfg=88
 hi Error ctermbg=255 ctermfg=124
 hi Statement cterm=bold ctermfg=19
-hi String cterm=italic ctermfg=70
+hi String ctermfg=70
 hi Todo cterm=bold ctermfg=160
