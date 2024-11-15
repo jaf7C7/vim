@@ -78,7 +78,7 @@ hi clear Error
 hi clear Todo
 
 hi ColorColumn ctermbg=255
-hi ErrorMsg ctermfg=9 cterm=bold
+hi ErrorMsg ctermfg=1 cterm=bold
 hi IncSearch cterm=reverse,bold,underline
 hi LineNr ctermfg=250
 hi CursorLineNr ctermfg=9 cterm=bold
@@ -99,9 +99,8 @@ hi Visual ctermfg=15 ctermbg=12
 hi WildMenu ctermbg=254 cterm=bold,italic ctermfg=9
 hi WarningMsg cterm=bold ctermfg=3
 
-hi Comment cterm=italic ctermfg=245
-hi Constant ctermfg=88
-hi Error ctermbg=255 ctermfg=124
-hi Statement cterm=bold ctermfg=19
-hi String ctermfg=70
-hi Todo cterm=bold ctermfg=160
+hi Comment cterm=italic ctermfg=7
+hi Constant ctermfg=12
+hi Error ctermbg=255 ctermfg=1
+hi Statement cterm=bold ctermfg=4
+hi Todo cterm=bold ctermfg=9

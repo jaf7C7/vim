@@ -14,7 +14,7 @@ set statusline=%f\ %r%m%=%y
 
 filetype plugin indent on
 
-colorscheme opulence
+colorscheme cool
 
 packadd! editorconfig  " Read .editorconfig files.
 packadd! comment  " Comment code with `gc{motion}`.
