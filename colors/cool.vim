@@ -99,8 +99,8 @@ hi Visual ctermfg=15 ctermbg=12
 hi WildMenu ctermbg=254 cterm=bold,italic ctermfg=9
 hi WarningMsg cterm=bold ctermfg=3
 
-hi Comment cterm=italic ctermfg=7
-hi Constant ctermfg=12
+hi Comment cterm=italic ctermfg=1
+hi Constant ctermfg=2
 hi Error ctermbg=255 ctermfg=1
 hi Statement cterm=bold ctermfg=4
 hi Todo cterm=bold ctermfg=9
