@@ -78,26 +78,26 @@ hi clear Error
 hi clear Todo
 
 hi ColorColumn ctermbg=255
+hi CursorLineNr ctermfg=1 cterm=bold
 hi ErrorMsg ctermfg=1 cterm=bold
 hi IncSearch cterm=reverse,bold,underline
 hi LineNr ctermfg=250
-hi CursorLineNr ctermfg=9 cterm=bold
 hi MatchParen ctermfg=12 ctermbg=255 cterm=bold
-hi! def link MoreMsg Question
-hi! def link ModeMsg LineNr
 hi Pmenu ctermbg=255
-hi PmenuThumb ctermbg=254
 hi PmenuSBar ctermbg=255
-hi! def link PMenuSel WildMenu
+hi PmenuThumb ctermbg=254
 hi Question cterm=bold ctermfg=2
 hi Search cterm=reverse
-hi! def link SpecialKey WildMenu
 hi StatusLine ctermbg=255
-hi! def link StatusLineNC StatusLine
 hi VertSplit ctermbg=255 ctermfg=255
-hi Visual ctermfg=15 ctermbg=12
-hi WildMenu ctermbg=254 cterm=bold ctermfg=9
+hi Visual ctermfg=none cterm=reverse
 hi WarningMsg cterm=bold ctermfg=3
+hi WildMenu ctermbg=254 cterm=bold ctermfg=1
+hi! def link ModeMsg LineNr
+hi! def link MoreMsg Question
+hi! def link PMenuSel WildMenu
+hi! def link SpecialKey WildMenu
+hi! def link StatusLineNC StatusLine
 
 hi Comment cterm=italic ctermfg=12
 hi Constant ctermfg=3
