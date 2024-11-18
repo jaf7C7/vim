@@ -85,7 +85,7 @@ hi CursorLineNr ctermfg=9 cterm=bold
 hi MatchParen ctermfg=9 cterm=bold
 hi! def link MoreMsg Question
 hi! def link ModeMsg LineNr
-hi Pmenu ctermbg=255 cterm=italic
+hi Pmenu ctermbg=255
 hi PmenuThumb ctermbg=254
 hi PmenuSBar ctermbg=255
 hi! def link PMenuSel WildMenu
