@@ -78,7 +78,7 @@ hi clear Error
 hi clear Todo
 
 hi ColorColumn ctermbg=255
-hi CursorLineNr ctermfg=12 cterm=bold
+hi CursorLineNr ctermfg=9 cterm=bold
 hi ErrorMsg ctermfg=1 cterm=bold
 hi IncSearch cterm=reverse,bold,underline
 hi LineNr ctermfg=250
@@ -92,7 +92,7 @@ hi StatusLine ctermbg=255
 hi VertSplit ctermbg=255 ctermfg=255
 hi Visual ctermfg=none cterm=reverse
 hi WarningMsg cterm=bold ctermfg=3
-hi WildMenu ctermbg=254 cterm=bold ctermfg=12
+hi WildMenu ctermbg=254 cterm=bold ctermfg=4
 hi! def link ModeMsg LineNr
 hi! def link MoreMsg Question
 hi! def link PMenuSel WildMenu
