@@ -3,14 +3,13 @@ set backupdir=~/.config/vim/backups,.
 set cursorline
 set formatoptions+=j  " Remove comment leader when joining lines.
 set hidden
-set mouse=nvi  " Use the mouse except in command-mode.
 set nohlsearch
 set noincsearch
 set noruler
 set noshowmode
 set scrolloff=1
 set shiftwidth=0  " 'shiftwidth' follows 'tabstop'.
-set statusline=%f\ %r%m%=%y
+set shortmess=aoOsTcC
 
 filetype plugin indent on
 
