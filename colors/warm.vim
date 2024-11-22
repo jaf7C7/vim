@@ -1,5 +1,5 @@
 hi clear
-let g:colors_name = 'jfox'
+let g:colors_name = 'warm'
 
 hi clear SpecialKey
 hi clear EndOfBuffer

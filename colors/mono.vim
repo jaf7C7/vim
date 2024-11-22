@@ -1,5 +1,5 @@
 hi clear
-let g:colors_name = 'jfox'
+let g:colors_name = 'mono'
 
 hi clear SpecialKey
 hi clear EndOfBuffer
@@ -98,8 +98,8 @@ hi! def link SpecialKey WildMenu
 hi! def link StatusLineNC StatusLine
 hi! def link WarningMsg Question
 
-hi Comment cterm=italic ctermfg=7
-hi Constant cterm=italic
-hi Error ctermbg=255 ctermfg=1
-hi Statement cterm=bold
+hi Comment cterm=italic,bold
+hi String cterm=italic
+hi Constant cterm=bold
+hi Error ctermbg=255
 hi Todo cterm=bold,reverse
