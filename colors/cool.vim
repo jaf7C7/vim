@@ -99,8 +99,9 @@ hi! def link PMenuSel WildMenu
 hi! def link SpecialKey WildMenu
 hi! def link StatusLineNC StatusLine
 
-hi Comment cterm=italic ctermfg=12
-hi Constant ctermfg=2
+hi Comment cterm=italic ctermfg=3
+hi Constant ctermfg=1
+hi String ctermfg=2
 hi Error ctermbg=255 ctermfg=1
 hi Statement cterm=bold ctermfg=4
 hi Todo cterm=bold ctermfg=9
