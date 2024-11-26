@@ -92,16 +92,16 @@ hi StatusLine ctermbg=255
 hi VertSplit ctermbg=255 ctermfg=255
 hi Visual ctermfg=none cterm=reverse
 hi WarningMsg cterm=bold ctermfg=3
-hi WildMenu ctermbg=254 cterm=bold ctermfg=4
+hi WildMenu ctermbg=254 cterm=bold ctermfg=1
 hi! def link ModeMsg LineNr
 hi! def link MoreMsg Question
 hi! def link PMenuSel WildMenu
 hi! def link SpecialKey WildMenu
 hi! def link StatusLineNC StatusLine
 
-hi Comment cterm=italic ctermfg=3
+hi Comment cterm=italic ctermfg=1
 hi Constant ctermfg=1
 hi String ctermfg=2
 hi Error ctermbg=255 ctermfg=1
 hi Statement cterm=bold ctermfg=4
-hi Todo cterm=bold ctermfg=9
+hi Todo cterm=bold ctermfg=1
