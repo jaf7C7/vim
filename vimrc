@@ -13,7 +13,7 @@ set shortmess=aoOsTcC
 
 filetype plugin indent on
 
-colorscheme cool
+colorscheme opulence
 
 packadd! editorconfig  " Read .editorconfig files.
 packadd! comment  " Comment code with `gc{motion}`.

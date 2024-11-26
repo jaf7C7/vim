@@ -78,10 +78,10 @@ hi clear Error
 hi clear Todo
 
 hi ColorColumn ctermbg=255
-hi CursorLineNr ctermfg=12 cterm=bold
+hi CursorLineNr ctermfg=5 cterm=bold
 hi ErrorMsg ctermfg=1 cterm=bold
 hi IncSearch cterm=reverse,bold,underline
-hi LineNr ctermfg=250
+hi LineNr ctermfg=6
 hi MatchParen ctermfg=12 ctermbg=255 cterm=bold
 hi Pmenu ctermbg=255
 hi PmenuSBar ctermbg=255
@@ -96,6 +96,7 @@ hi WildMenu ctermbg=254 cterm=bold ctermfg=1
 hi! def link ModeMsg LineNr
 hi! def link MoreMsg Question
 hi! def link PMenuSel WildMenu
+hi! def link QuickFixLine WildMenu
 hi! def link SpecialKey WildMenu
 hi! def link StatusLineNC StatusLine
 

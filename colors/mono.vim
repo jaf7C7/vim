@@ -87,9 +87,9 @@ hi PmenuThumb ctermbg=254
 hi Question cterm=reverse
 hi Search cterm=reverse
 hi StatusLine cterm=reverse
-hi VertSplit ctermbg=255 ctermfg=255
+hi VertSplit ctermfg=0 ctermbg=0
 hi Visual ctermfg=15 ctermbg=12
-hi WildMenu cterm=bold
+hi WildMenu cterm=bold,reverse
 hi! def link ErrorMsg Question
 hi! def link ModeMsg LineNr
 hi! def link MoreMsg Question
@@ -100,6 +100,5 @@ hi! def link WarningMsg Question
 
 hi Comment cterm=italic,bold
 hi String cterm=italic
-hi Constant cterm=bold
 hi Error ctermbg=255
 hi Todo cterm=bold,reverse

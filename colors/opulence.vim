@@ -1,5 +1,5 @@
 hi clear
-let g:colors_name = 'cool'
+let g:colors_name = 'opulence'
 
 hi clear SpecialKey
 hi clear EndOfBuffer
@@ -78,11 +78,11 @@ hi clear Error
 hi clear Todo
 
 hi ColorColumn ctermbg=255
-hi CursorLineNr ctermfg=9 cterm=bold
+hi CursorLineNr ctermfg=3 cterm=bold
 hi ErrorMsg ctermfg=1 cterm=bold
 hi IncSearch cterm=reverse,bold,underline
-hi LineNr ctermfg=250
-hi MatchParen ctermfg=9 ctermbg=255 cterm=bold
+hi LineNr ctermfg=6
+hi MatchParen ctermfg=1 ctermbg=255 cterm=bold
 hi Pmenu ctermbg=255
 hi PmenuSBar ctermbg=255
 hi PmenuThumb ctermbg=254
@@ -96,6 +96,7 @@ hi WildMenu ctermbg=254 cterm=bold ctermfg=1
 hi! def link ModeMsg LineNr
 hi! def link MoreMsg Question
 hi! def link PMenuSel WildMenu
+hi! def link QuickFixLine WildMenu
 hi! def link SpecialKey WildMenu
 hi! def link StatusLineNC StatusLine
 
@@ -104,4 +105,4 @@ hi Constant ctermfg=3
 hi String ctermfg=2
 hi Error ctermbg=255 ctermfg=1
 hi Statement cterm=bold ctermfg=4
-hi Todo cterm=bold ctermfg=1
+hi Todo cterm=bold,reverse ctermfg=1
