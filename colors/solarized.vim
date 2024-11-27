@@ -78,10 +78,10 @@ hi clear Error
 hi clear Todo
 
 hi ColorColumn ctermbg=0
-hi CursorLineNr ctermfg=3 cterm=bold
+hi CursorLineNr ctermfg=5 ctermbg=0 cterm=bold
 hi ErrorMsg ctermfg=1 cterm=bold
 hi IncSearch cterm=reverse,bold,underline
-hi LineNr ctermfg=6
+hi LineNr ctermfg=6 ctermbg=0
 hi Pmenu ctermbg=0 ctermfg=11
 hi PmenuSBar ctermbg=0
 hi PmenuThumb ctermbg=10
