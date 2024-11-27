@@ -1,6 +1,6 @@
 set autoindent
 set backupdir=~/.config/vim/backups,.
-set cursorline
+"set cursorline
 set formatoptions+=j  " Remove comment leader when joining lines.
 set hidden
 set nohlsearch
@@ -13,7 +13,11 @@ set shortmess=aoOsTcC
 
 filetype plugin indent on
 
-colorscheme opulence
+if $TERMINAL_THEME == 'solarized'
+	colorscheme solarized
+else
+	colorscheme opulence
+endif
 
 packadd! editorconfig  " Read .editorconfig files.
 packadd! comment  " Comment code with `gc{motion}`.
