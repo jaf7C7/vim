@@ -1,6 +1,7 @@
 hi clear
 let g:colors_name = 'opulence'
 
+" TODO 
 hi clear SpecialKey
 hi clear EndOfBuffer
 hi clear NonText
@@ -80,14 +81,14 @@ hi clear Todo
 hi ColorColumn ctermbg=255
 hi CursorLineNr ctermfg=3 cterm=bold
 hi ErrorMsg ctermfg=1 cterm=bold
-hi IncSearch cterm=reverse,bold,underline
+hi IncSearch cterm=bold ctermfg=15 ctermbg=12
 hi LineNr ctermfg=6
 hi MatchParen ctermfg=1 ctermbg=255 cterm=bold
 hi Pmenu ctermbg=255
 hi PmenuSBar ctermbg=255
 hi PmenuThumb ctermbg=254
 hi Question cterm=bold ctermfg=2
-hi Search cterm=reverse
+hi Search ctermfg=15 ctermbg=12
 hi StatusLine ctermbg=255
 hi VertSplit ctermbg=255 ctermfg=255
 hi Visual ctermfg=none cterm=reverse

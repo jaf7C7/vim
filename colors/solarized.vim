@@ -78,15 +78,15 @@ hi clear Error
 hi clear Todo
 
 hi ColorColumn ctermbg=0
-hi CursorLineNr ctermfg=5 ctermbg=0 cterm=bold
+hi CursorLineNr ctermfg=13 ctermbg=0 cterm=bold
 hi ErrorMsg ctermfg=1 cterm=bold
-hi IncSearch cterm=reverse,bold,underline
+hi IncSearch ctermfg=0 ctermbg=15
 hi LineNr ctermfg=6 ctermbg=0
 hi Pmenu ctermbg=0 ctermfg=11
 hi PmenuSBar ctermbg=0
 hi PmenuThumb ctermbg=10
 hi Question cterm=bold ctermfg=2
-hi Search cterm=reverse
+hi Search ctermfg=0 ctermbg=14
 hi StatusLine ctermbg=0
 hi VertSplit ctermbg=0 ctermfg=0
 hi Visual ctermfg=none cterm=reverse
@@ -101,7 +101,7 @@ hi! def link SpecialKey WildMenu
 hi! def link StatusLineNC StatusLine
 
 hi Comment cterm=italic ctermfg=9
-hi Constant ctermfg=3
+hi Constant ctermfg=6
 hi String ctermfg=2
 hi Error ctermbg=0 ctermfg=1
 hi Statement cterm=bold ctermfg=4
