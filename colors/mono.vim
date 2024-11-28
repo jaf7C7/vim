@@ -88,7 +88,7 @@ hi Question cterm=reverse
 hi Search cterm=reverse
 hi StatusLine cterm=reverse
 hi VertSplit ctermfg=0 ctermbg=0
-hi Visual ctermfg=15 ctermbg=12
+hi Visual cterm=reverse
 hi WildMenu cterm=bold,reverse
 hi! def link ErrorMsg Question
 hi! def link ModeMsg LineNr
@@ -100,5 +100,5 @@ hi! def link WarningMsg Question
 
 hi Comment cterm=italic,bold
 hi String cterm=italic
-hi Error ctermbg=255
+hi Error cterm=underline
 hi Todo cterm=bold,reverse
