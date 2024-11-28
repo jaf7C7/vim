@@ -1,5 +1,5 @@
 hi clear
-let g:colors_name = 'solarized'
+let g:colors_name = 'life'
 
 hi clear SpecialKey
 hi clear EndOfBuffer
@@ -77,22 +77,22 @@ hi clear Removed
 hi clear Error
 hi clear Todo
 
-hi ColorColumn ctermbg=0
-hi CursorLineNr ctermfg=13 ctermbg=0 cterm=bold
+hi ColorColumn ctermbg=255
+hi CursorLineNr ctermfg=3 cterm=bold
 hi ErrorMsg ctermfg=1 cterm=bold
-hi IncSearch ctermfg=0 ctermbg=15
-hi LineNr ctermfg=6 ctermbg=0
-hi MatchParen ctermbg=0 ctermfg=5 cterm=bold
-hi Pmenu ctermbg=0 ctermfg=11
-hi PmenuSBar ctermbg=0
-hi PmenuThumb ctermbg=10
+hi IncSearch cterm=bold ctermfg=15 ctermbg=12
+hi LineNr ctermfg=6
+hi MatchParen ctermfg=1 ctermbg=255 cterm=bold
+hi Pmenu ctermbg=255
+hi PmenuSBar ctermbg=255
+hi PmenuThumb ctermbg=254
 hi Question cterm=bold ctermfg=2
-hi Search ctermfg=0 ctermbg=14
-hi StatusLine ctermbg=0
-hi VertSplit ctermbg=0 ctermfg=0
+hi Search ctermfg=15 ctermbg=12
+hi StatusLine ctermbg=255
+hi VertSplit ctermbg=255 ctermfg=255
 hi Visual ctermfg=none cterm=reverse
 hi WarningMsg cterm=bold ctermfg=3
-hi WildMenu ctermbg=0 ctermfg=6 cterm=bold
+hi WildMenu ctermbg=254 cterm=bold ctermfg=1
 hi! def link ModeMsg LineNr
 hi! def link MoreMsg Question
 hi! def link PMenuSel WildMenu
@@ -100,9 +100,9 @@ hi! def link QuickFixLine WildMenu
 hi! def link SpecialKey WildMenu
 hi! def link StatusLineNC StatusLine
 
-hi Comment cterm=italic ctermfg=9
+hi Comment cterm=italic ctermfg=2
 hi Constant ctermfg=3
-hi String ctermfg=2
-hi Error ctermbg=0 ctermfg=1
-hi Statement cterm=bold ctermfg=4
-hi Todo cterm=bold,reverse ctermfg=1
+hi String ctermfg=4
+hi Error ctermbg=255 ctermfg=1
+hi Statement cterm=bold ctermfg=1
+hi Todo cterm=bold ctermfg=15 ctermbg=1

@@ -101,8 +101,8 @@ hi! def link SpecialKey WildMenu
 hi! def link StatusLineNC StatusLine
 
 hi Comment cterm=italic ctermfg=1
-hi Constant ctermfg=22
+hi Constant ctermfg=3
 hi String ctermfg=2
 hi Error ctermbg=255 ctermfg=1
 hi Statement cterm=bold ctermfg=4
-hi Todo cterm=bold,reverse ctermfg=1
+hi Todo cterm=bold ctermfg=15 ctermbg=1
