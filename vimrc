@@ -1,16 +1,17 @@
 set autoindent
 set backupdir=~/.config/vim/backups,.
-"set cursorline
+"set cursorline  " Highlight current line.
 set formatoptions+=j  " Remove comment leader when joining lines.
 set hidden
+set mouse=n  " Allow mouse only in normal mode.
 set nohlsearch
 set noincsearch
 set noruler
 set noshowmode
+set statusline=%f\ %y%r%m
 set scrolloff=1
 set shiftwidth=0  " 'shiftwidth' follows 'tabstop'.
 set shortmess=aoOsTcC
-
 filetype plugin indent on
 
 if $TERMINAL_THEME == 'solarized'
@@ -30,19 +31,16 @@ nnoremap <C-p> :bp<CR>
 inoremap <C-H> <C-W>
 cnoremap <C-H> <C-W>
 
-" Disable mousewheel/touchpad scrolling.
+" Disable `alternateScroll` while in vim, re-enable on exit.
 " https://www.invisible-island.net/xterm/ctlseqs/ctlseqs.html
-" TODO: Sourcing this twice will keep adding unnecessary characters to the
-" strings.  Protect these variables from re-sourcing.
-let &t_ti = "\e[?1007l" . &t_ti
-let &t_te = &t_te . "\e[?1007h"
+let &t_ti = (&t_ti =~ "\e[?1007l") ? &t_ti : "\e[?1007l" . &t_ti
+let &t_te = (&t_te =~ "\e[?1007h") ? &t_te : &t_te . "\e[?1007h"
 
-" Change cursor shape in insert mode.
+" Change cursor shape depending on mode.
 " https://www.invisible-island.net/xterm/ctlseqs/ctlseqs.html
-" TODO: see above...
 let &t_SI = "\e[5 q"
 let &t_EI = "\e[1 q"
-let &t_ti =  &t_ti . "\e[1 q"
+let &t_ti = (&t_ti =~ "\e[1 q") ? &t_ti : &t_ti . "\e[1 q"
 
 " Highlight trailing whitespace.
 " https://vim.fandom.com/wiki/Highlight_unwanted_spaces
