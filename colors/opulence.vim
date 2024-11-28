@@ -1,7 +1,6 @@
 hi clear
 let g:colors_name = 'opulence'
 
-" TODO 
 hi clear SpecialKey
 hi clear EndOfBuffer
 hi clear NonText
