@@ -22,9 +22,9 @@ endif
 packadd! editorconfig  " Read .editorconfig files.
 packadd! comment  " Comment code with `gc{motion}`.
 
-" Save like you expect (make sure XON/XOFF flow control is disabled).
-inoremap <C-S> <C-o>:w<CR>
-nnoremap <C-S> :w<CR>
+" Easier scrolling through buffers.
+nnoremap <C-n> :bn<CR>
+nnoremap <C-p> :bp<CR>
 
 " Make Ctrl-Backspace delete the previous word.
 inoremap <C-H> <C-W>
