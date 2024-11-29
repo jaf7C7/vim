@@ -102,3 +102,4 @@ hi Comment cterm=italic,bold
 hi String cterm=italic
 hi Error cterm=underline
 hi Todo cterm=bold,reverse
+hi! def link Include Statement

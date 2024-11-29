@@ -106,3 +106,4 @@ hi String ctermfg=2
 hi Error ctermbg=0 ctermfg=1
 hi Statement cterm=bold ctermfg=4
 hi Todo cterm=bold,reverse ctermfg=1
+hi! def link Include Statement
