@@ -31,10 +31,20 @@ nnoremap <C-p> :bp<CR>
 inoremap <C-H> <C-W>
 cnoremap <C-H> <C-W>
 
+function s:TmuxPassthrough(str)
+	return "\ePtmux;" . substitute(a:str, "\e", "\e\e", "g") . "\e\\"
+endfunction
+
 " Disable `alternateScroll` while in vim, re-enable on exit.
 " https://www.invisible-island.net/xterm/ctlseqs/ctlseqs.html
-let &t_ti = (&t_ti =~ "\e[?1007l") ? &t_ti : "\e[?1007l" . &t_ti
-let &t_te = (&t_te =~ "\e[?1007h") ? &t_te : &t_te . "\e[?1007h"
+let s:disable_altscroll = "\e[?1007l"
+let s:enable_altscroll = "\e[?1007h"
+if &term =~ 'tmux'
+	let s:disable_altscroll = s:TmuxPassthrough(s:disable_altscroll)
+	let s:enable_altscroll = s:TmuxPassthrough(s:enable_altscroll)
+endif
+let &t_ti = (&t_ti =~ s:disable_altscroll) ? &t_ti : s:disable_altscroll . &t_ti
+let &t_te = (&t_te =~ s:enable_altscroll) ? &t_te : &t_te . s:enable_altscroll
 
 " Change cursor shape depending on mode.
 " https://www.invisible-island.net/xterm/ctlseqs/ctlseqs.html
