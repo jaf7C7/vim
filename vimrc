@@ -16,7 +16,7 @@ set wildmode=longest,list
 filetype plugin indent on
 
 autocmd FileType html,css,javascript set ts=2 et
-autocmd FileType vim set ts=4 et
+autocmd FileType vim,sh,bash,zsh,python set ts=4 et
 
 packadd! editorconfig  " Read .editorconfig files.
 packadd! comment  " Comment code with `gc{motion}`.
