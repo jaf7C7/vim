@@ -78,6 +78,7 @@ hi clear Error
 hi clear Todo
 
 hi ColorColumn ctermbg=255
+hi CursorLine ctermfg=255
 hi CursorLineNr cterm=bold
 hi IncSearch cterm=reverse,bold,underline
 hi MatchParen cterm=bold,underline

@@ -78,6 +78,7 @@ hi clear Error
 hi clear Todo
 
 hi ColorColumn ctermbg=255
+hi CursorLine ctermbg=255
 hi CursorLineNr ctermfg=3 cterm=bold
 hi ErrorMsg ctermfg=1 cterm=bold
 hi IncSearch cterm=bold ctermfg=15 ctermbg=12
@@ -100,7 +101,7 @@ hi! def link QuickFixLine WildMenu
 hi! def link SpecialKey WildMenu
 hi! def link StatusLineNC StatusLine
 
-hi Comment cterm=italic ctermfg=2
+hi Comment cterm=italic ctermfg=244
 hi Constant ctermfg=3
 hi String ctermfg=4
 hi Error ctermbg=255 ctermfg=1

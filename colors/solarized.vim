@@ -78,6 +78,7 @@ hi clear Error
 hi clear Todo
 
 hi ColorColumn ctermbg=0
+hi CursorLine ctermfg=0
 hi CursorLineNr ctermfg=13 ctermbg=0 cterm=bold
 hi ErrorMsg ctermfg=1 cterm=bold
 hi IncSearch ctermfg=0 ctermbg=15
