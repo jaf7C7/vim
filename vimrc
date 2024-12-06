@@ -1,3 +1,9 @@
+" TODO: Get byte offset of a given line + column position.
+" For use in 'formatexpr' to save and restore cursor position when formatting,
+" or to format only a section of the buffer, specified by a range of
+" byte-offsets (e.g. with `prettier`)
+" Look at: `:h line2byte()`, `:h col()`
+
 set autoindent
 set backupdir=~/.config/vim/backups,.
 set formatoptions+=j  " Remove comment leader when joining lines.

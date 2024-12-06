@@ -101,8 +101,8 @@ hi! def link QuickFixLine WildMenu
 hi! def link SpecialKey WildMenu
 hi! def link StatusLineNC StatusLine
 
-hi Comment cterm=italic ctermfg=1
-hi Constant ctermfg=3
+hi Comment ctermfg=1
+hi Constant ctermfg=6
 hi String ctermfg=2
 hi Error ctermbg=255 ctermfg=1
 hi Statement ctermfg=4
