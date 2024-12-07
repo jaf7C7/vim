@@ -99,8 +99,10 @@ hi! def link SpecialKey WildMenu
 hi! def link StatusLineNC StatusLine
 hi! def link WarningMsg Question
 
+hi Added ctermfg=2
 hi Comment cterm=italic,bold
 hi String cterm=italic
 hi Error cterm=underline
+hi Removed ctermfg=1
 hi Todo cterm=bold,reverse
 hi! def link Include Statement
