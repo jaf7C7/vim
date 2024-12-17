@@ -8,7 +8,7 @@ set autoindent
 set backupdir=~/.config/vim/backups,.
 set formatoptions+=j  " Remove comment leader when joining lines.
 set hidden
-set mouse=n  " Allow mouse only in normal mode.
+set mouse=nv  " Allow mouse only in normal and visual modes.
 set nohlsearch
 set noincsearch
 set noruler
