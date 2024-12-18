@@ -110,3 +110,5 @@ hi Removed ctermfg=1 ctermbg=10
 hi Statement ctermfg=4
 hi Todo cterm=bold,reverse ctermfg=1
 hi! def link Include Statement
+
+hi! def link javaScriptIdentifier Statement
