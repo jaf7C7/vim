@@ -29,10 +29,8 @@ packadd! comment  " Comment code with `gc{motion}`.
 
 if $TERMINAL_THEME == 'solarized'
     colorscheme solarized
-elseif $TERMINAL_THEME == 'vs'
-    colorscheme vs
 else
-    colorscheme mono
+    colorscheme vs
 endif
 
 " Highlight trailing whitespace.
