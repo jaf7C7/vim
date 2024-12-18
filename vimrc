@@ -88,3 +88,12 @@ let s:block_cursor = "\e[1 q"
 let &t_SI = s:bar_cursor
 let &t_EI = s:block_cursor
 let &t_ti = s:AppendIfNotContains(s:block_cursor, &t_ti)
+
+" Get syntax group under cursor, for highlighting tweaks.
+function! SynStack()
+    if !exists("*synstack")
+        return
+    endif
+    echo map(synstack(line('.'), col('.')), 'synIDattr(v:val, "name")')
+endfunc
+nnoremap gs :call SynStack()<CR>

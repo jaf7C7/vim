@@ -77,23 +77,23 @@ hi clear Removed
 hi clear Error
 hi clear Todo
 
-hi ColorColumn ctermbg=0
-hi CursorLine ctermfg=0
-hi CursorLineNr ctermfg=13 ctermbg=0 cterm=bold
+hi ColorColumn ctermbg=8
+hi CursorLine ctermfg=8
+hi CursorLineNr ctermfg=13 ctermbg=8 cterm=bold
 hi ErrorMsg ctermfg=1 cterm=bold
-hi IncSearch ctermfg=0 ctermbg=15
-hi LineNr ctermfg=6 ctermbg=0
-hi MatchParen ctermbg=0 ctermfg=5 cterm=bold
-hi Pmenu ctermbg=0 ctermfg=11
-hi PmenuSBar ctermbg=0
-hi PmenuThumb ctermbg=10
+hi IncSearch ctermfg=8 ctermbg=15
+hi LineNr ctermfg=6 ctermbg=8
+hi MatchParen ctermbg=8 ctermfg=5 cterm=bold
+hi Pmenu ctermbg=8 ctermfg=11
+hi PmenuSBar ctermbg=8
+hi PmenuThumb ctermbg=18
 hi Question cterm=bold ctermfg=2
-hi Search ctermfg=0 ctermbg=14
-hi StatusLine ctermbg=0
-hi VertSplit ctermbg=0 ctermfg=0
+hi Search ctermfg=8 ctermbg=14
+hi StatusLine ctermbg=8
+hi VertSplit ctermbg=8 ctermfg=8
 hi Visual ctermfg=9 cterm=reverse
 hi WarningMsg cterm=bold ctermfg=3
-hi WildMenu ctermbg=0 ctermfg=6 cterm=bold
+hi WildMenu ctermbg=8 ctermfg=6 cterm=bold
 hi! def link ModeMsg LineNr
 hi! def link MoreMsg Question
 hi! def link PMenuSel WildMenu
@@ -101,12 +101,12 @@ hi! def link QuickFixLine WildMenu
 hi! def link SpecialKey WildMenu
 hi! def link StatusLineNC StatusLine
 
-hi Added ctermfg=2 ctermbg=0
+hi Added ctermfg=2 ctermbg=8
 hi Comment cterm=italic ctermfg=9
 hi Constant ctermfg=3
 hi String ctermfg=2
-hi Error ctermbg=0 ctermfg=1
-hi Removed ctermfg=1 ctermbg=0
+hi Error ctermbg=8 ctermfg=1
+hi Removed ctermfg=1 ctermbg=8
 hi Statement ctermfg=4
 hi Todo cterm=bold,reverse ctermfg=1
 hi! def link Include Statement
