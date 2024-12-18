@@ -29,8 +29,8 @@ packadd! comment  " Comment code with `gc{motion}`.
 
 if $TERMINAL_THEME == 'solarized'
     colorscheme solarized
-elseif $TERMINAL_THEME == 'visual-studio'
-    colorscheme opulence
+elseif $TERMINAL_THEME == 'vs'
+    colorscheme vs
 else
     colorscheme mono
 endif
