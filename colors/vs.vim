@@ -91,7 +91,7 @@ hi Question cterm=bold ctermfg=2
 hi Search ctermfg=15 ctermbg=12
 hi StatusLine ctermbg=255
 hi VertSplit ctermbg=255 ctermfg=255
-hi Visual ctermfg=1 cterm=reverse
+hi Visual ctermfg=2 cterm=reverse
 hi WarningMsg cterm=bold ctermfg=3
 hi WildMenu ctermbg=254 cterm=bold ctermfg=1
 hi! def link ModeMsg LineNr
